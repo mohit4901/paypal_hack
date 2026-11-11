@@ -13,3 +13,4 @@ Core engineering documentation is organized under `docs/`, while frozen evaluati
 - [`../FINAL_RELEASE/SECURITY_RELEASE_CHECKLIST.md`](../FINAL_RELEASE/SECURITY_RELEASE_CHECKLIST.md) — Multi-tenant isolation, cryptographic approval checks, and credential hygiene.
 - [`../FINAL_RELEASE/SHA256_CHECKSUMS.txt`](../FINAL_RELEASE/SHA256_CHECKSUMS.txt) — Authoritative SHA-256 digests for frozen model and tokenizer files.
 - [`../FINAL_RELEASE/DEMO_SCRIPT.md`](../FINAL_RELEASE/DEMO_SCRIPT.md) — Live product walkthrough storyboard and recording precautions.
+

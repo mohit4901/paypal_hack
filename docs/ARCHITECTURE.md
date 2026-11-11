@@ -69,3 +69,4 @@ flowchart TB
 - **Server-Side Approval Binding**: `POST /api/v2/disputes/{dispute_id}/approve-evidence` computes and persists an `approval_id` (`EAPPR-*`) bound to `(seller_id, dispute_id, evidence_digest)` in `evidence_approvals`.
 - **Tamper & Stale Guard**: Modifying carrier, tracking, draft text, or attachment URL after approval triggers immediate UI invalidation and returns `HTTP 409 STALE_OR_MODIFIED_APPROVAL` from `provide-evidence`.
 - **Local vs. Live Guard**: Submitting a local demo case (`DSP-*`) with `require_live_paypal=true` returns `HTTP 400 LOCAL_DEMO_NOT_LIVE_PAYPAL`.
+

@@ -297,17 +297,28 @@ class PayPalDisputeService:
             except Exception:
                 urgency_days = None
 
+        tx_ref = tx_info.get("seller_transaction_id") or tx_info.get("buyer_transaction_id") or d.get("dispute_id")
+        msgs = d.get("messages") or []
+        buyer_msg = next((m.get("content") for m in msgs if m.get("posted_by") == "BUYER" and m.get("content")), None)
+
         return {
             "dispute_id": d.get("dispute_id"),
             "reason": reason,
+            "dispute_reason": reason,
             "status": status,
             "lifecycle_stage": d.get("dispute_life_cycle_stage", "INQUIRY"),
             "amount": amt_info.get("value", "0.00"),
             "currency": amt_info.get("currency_code", "USD"),
             "seller_response_due_date": due_date,
+            "response_deadline": due_date,
             "urgency_days_left": urgency_days,
+            "transaction_reference": tx_ref,
+            "capture_id": tx_info.get("seller_transaction_id") or tx_info.get("buyer_transaction_id"),
             "buyer_transaction_id": tx_info.get("buyer_transaction_id"),
             "seller_transaction_id": tx_info.get("seller_transaction_id"),
+            "buyer_email": tx_info.get("buyer", {}).get("email_address"),
+            "buyer_name": tx_info.get("buyer", {}).get("name"),
+            "customer_claim": buyer_msg or f"Live PayPal buyer dispute ({reason}) for transaction {tx_ref}.",
             "links": d.get("links", []),
         }
 

@@ -621,18 +621,20 @@ def _resolve_dispute_and_transaction(
             live_detail = paypal_dispute_client.get_dispute(dispute_id)
             if live_detail.get("success"):
                 ld = live_detail["dispute"]
+                tx_ref = ld.get("transaction_reference") or ld.get("seller_transaction_id") or ld.get("buyer_transaction_id") or dispute_id
+                cap_ref = ld.get("capture_id") or ld.get("seller_transaction_id") or ld.get("buyer_transaction_id") or tx_ref
                 return (
                     {
                         "dispute_id": dispute_id,
-                        "reason": ld.get("dispute_reason", "MERCHANDISE_OR_SERVICE_NOT_RECEIVED"),
+                        "reason": ld.get("dispute_reason") or ld.get("reason") or "MERCHANDISE_OR_SERVICE_NOT_RECEIVED",
                         "amount": ld.get("amount", "0.00"),
                         "currency": ld.get("currency", "USD"),
                         "buyer_email": ld.get("buyer_email"),
                         "is_live_paypal_dispute": True,
                     },
                     {
-                        "order_id": ld.get("transaction_reference", ""),
-                        "capture_id": ld.get("capture_id", ""),
+                        "order_id": tx_ref,
+                        "capture_id": cap_ref,
                         "amount": ld.get("amount", "0.00"),
                         "currency": ld.get("currency", "USD"),
                         "payment_status": "COMPLETED",
