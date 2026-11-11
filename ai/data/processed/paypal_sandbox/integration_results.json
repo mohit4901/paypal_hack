@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-10-31T06:18:42.917272+00:00",
+  "mode": "sandbox",
+  "note": "Real PayPal sandbox API \u2014 not mock. Results reflect actual API responses.",
+  "results": [
+    {
+      "test": "credentials_configured",
+      "status": "PASSED",
+      "detail": "Credentials found in environment.",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:38.536714+00:00"
+    },
+    {
+      "test": "sandbox_authentication",
+      "status": "PASSED",
+      "detail": "Access token obtained successfully.",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:39.789120+00:00"
+    },
+    {
+      "test": "list_disputes",
+      "status": "PASSED",
+      "detail": "Retrieved 0 dispute(s).",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:40.737039+00:00"
+    },
+    {
+      "test": "create_order",
+      "status": "PASSED",
+      "detail": "Successfully created sandbox order 8L07910851096260W (status: CREATED).",
+      "data_sample": {
+        "id": "8L07910851096260W",
+        "status": "CREATED",
+        "links": [
+          {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/8L07910851096260W",
+            "rel": "self",
+            "method": "GET"
+          },
+          {
+            "href": "https://www.sandbox.paypal.com/checkoutnow?token=8L07910851096260W",
+            "rel": "approve",
+            "method": "GET"
+          },
+          {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/8L07910851096260W",
+            "rel": "update",
+            "method": "PATCH"
+          },
+          {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/8L07910851096260W/capture",
+            "rel": "capture",
+            "method": "POST"
+          }
+        ]
+      },
+      "timestamp": "2026-10-31T06:18:41.706361+00:00"
+    },
+    {
+      "test": "get_order_invalid_id",
+      "status": "PASSED",
+      "detail": "API correctly rejects invalid order ID.",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:42.916877+00:00"
+    },
+    {
+      "test": "webhook_signature_verification",
+      "status": "SKIPPED",
+      "detail": "Webhook verification requires an incoming webhook delivery. This test is unit-tested with mocks. See https://developer.paypal.com/api/webhooks/v1/#verify-webhook-signature_post",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:42.917109+00:00"
+    },
+    {
+      "test": "evidence_submission",
+      "status": "BLOCKED",
+      "detail": "Evidence submission (POST /v1/customer/disputes/{id}/provide-evidence) requires an active dispute ID and CUSTOMER_DISPUTE.UPDATE scope. No active sandbox dispute available in this run. See https://developer.paypal.com/disputes/test-go-live/ for test setup.",
+      "data_sample": null,
+      "timestamp": "2026-10-31T06:18:42.917158+00:00"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 5,
+    "failed": 0,
+    "blocked": 1,
+    "skipped": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dataset_name": "EvidenceBench-v2",
+  "version": "2.0.0",
+  "description": "Curated 3,000-pair NLI dataset for PayPal dispute evidence verification.",
+  "target_balance": "Strictly balanced: 1,000 Supported, 1,000 Contradicted, 1,000 Insufficient.",
+  "tiers": {
+    "tier_1_human_curated": 600,
+    "tier_2_contrastive_inr": 1200,
+    "tier_3_general_nli_replay": 900,
+    "tier_4_colloquial_diversity": 300
+  },
+  "splits": {
+    "train": 2100,
+    "validation": 450,
+    "test": 450
+  },
+  "class_counts": {
+    "SUPPORTED": 1000,
+    "CONTRADICTED": 1000,
+    "INSUFFICIENT_EVIDENCE": 1000
+  },
+  "exact_duplicates": 0,
+  "near_duplicate_rate_pct": 0.02,
+  "provenance": "Synthetic merchant templates, FEVEROUS general NLI benchmark, de-identified dispute logs",
+  "manifest_sha256": "46a5f466db0b25e97e006613c73335033bf405be811f8411f49feff2ca5efbc4"
+}

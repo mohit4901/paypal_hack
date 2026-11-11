@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proofledger"
+version = "2.6.0"
+description = "ProofLedger — Enterprise Evidence Intelligence & Cryptographic Dispute Defense Platform"
+authors = [{ name = "ProofLedger Engineering Team" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pydantic>=2.6.0",
+    "python-dotenv>=1.0.0",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+    "httpx>=0.27.0",
+    "cryptography>=41.0.0",
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "scipy>=1.11.0",
+    "requests>=2.31.0",
+    "matplotlib>=3.7.0",
+    "hypothesis>=6.100.0",
+    "PyYAML>=6.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*", "src*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = [
+    "ignore:urllib3 v2 only supports OpenSSL.*:UserWarning",
+    "ignore:.*'ssl' module is compiled with 'LibreSSL.*:UserWarning",
+    "ignore:.*deprecated.*:DeprecationWarning",
+]
+pythonpath = [
+    ".",
+    "ai",
+    "ai/src",
+]
+

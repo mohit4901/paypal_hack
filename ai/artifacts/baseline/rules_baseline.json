@@ -1,0 +1,125 @@
+{
+  "model": "Rules-only (Deterministic Baseline A)",
+  "data_dir": "data/processed/evidencebench",
+  "results": {
+    "validation": {
+      "n_examples": 1664,
+      "accuracy": 0.4123,
+      "macro_f1": 0.1946,
+      "contradiction_recall": 0.0,
+      "insufficient_evidence_recall": 1.0,
+      "false_positive_rate_supported": 0.0,
+      "per_class": {
+        "SUPPORTED": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 351.0
+        },
+        "CONTRADICTED": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 627.0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.41225961538461536,
+          "recall": 1.0,
+          "f1-score": 0.5838297872340426,
+          "support": 686.0
+        },
+        "accuracy": 0.41225961538461536,
+        "macro avg": {
+          "precision": 0.13741987179487178,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.1946099290780142,
+          "support": 1664.0
+        },
+        "weighted avg": {
+          "precision": 0.169957990477071,
+          "recall": 0.41225961538461536,
+          "f1-score": 0.24068944353518823,
+          "support": 1664.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          351
+        ],
+        [
+          0,
+          0,
+          627
+        ],
+        [
+          0,
+          0,
+          686
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "SUPPORTED",
+        "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "test": {
+      "n_examples": 1664,
+      "accuracy": 0.75,
+      "macro_f1": 0.7333,
+      "contradiction_recall": 0.5,
+      "insufficient_evidence_recall": 1.0,
+      "false_positive_rate_supported": 0.0,
+      "per_class": {
+        "SUPPORTED": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "CONTRADICTED": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1-score": 0.6666666666666666,
+          "support": 832.0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 832.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+          "precision": 0.5555555555555555,
+          "recall": 0.5,
+          "f1-score": 0.48888888888888893,
+          "support": 1664.0
+        },
+        "weighted avg": {
+          "precision": 0.8333333333333333,
+          "recall": 0.75,
+          "f1-score": 0.7333333333333333,
+          "support": 1664.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          416,
+          416
+        ],
+        [
+          0,
+          832
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "SUPPORTED",
+        "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    }
+  }
+}

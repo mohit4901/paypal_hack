@@ -1,0 +1,26 @@
+{
+  "dataset_name": "EvidenceBench",
+  "version": "1.1",
+  "description": "Synthetic domain-specific benchmark for PayPal digital-goods evidence verification.",
+  "licence": "Proprietary \u2014 synthetic data, not derived from real customer records.",
+  "is_synthetic": true,
+  "generated_at": "2026-10-29T16:52:49.340868Z",
+  "seed": 1042,
+  "splits": {
+    "train": "data/processed/evidencebench_v1_1/train.jsonl",
+    "validation": "data/processed/evidencebench_v1_1/validation.jsonl",
+    "test": "data/processed/evidencebench_v1_1/test.jsonl",
+    "challenge_test": "data/processed/evidencebench_v1_1/challenge_test.jsonl"
+  },
+  "counts": {
+    "train": 6656,
+    "validation": 1664,
+    "test": 1664,
+    "challenge": 400
+  },
+  "label_mapping": {
+    "SUPPORTED": "claim is adequately established by available evidence",
+    "CONTRADICTED": "available evidence conflicts with the claim",
+    "INSUFFICIENT_EVIDENCE": "evidence neither establishes nor contradicts the claim"
+  }
+}

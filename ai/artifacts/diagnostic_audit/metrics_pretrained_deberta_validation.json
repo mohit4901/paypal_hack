@@ -1,0 +1,66 @@
+{
+  "model_path": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "data_path": "data/processed/evidencebench/validation.jsonl",
+  "n_examples": 1664,
+  "raw_id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "out_idx_to_app_idx": {
+    "0": 0,
+    "1": 2,
+    "2": 1
+  },
+  "accuracy": 0.9176682692307693,
+  "macro_f1": 0.9279496818256225,
+  "represented_classes_macro_f1": 0.9279496818256225,
+  "weighted_f1": 0.9172035256660441,
+  "contradiction_recall": 0.9872408293460925,
+  "insufficient_evidence_recall": 0.8119533527696793,
+  "supported_recall": 1.0,
+  "supported_fpr": 0.007616146230007616,
+  "supported_fdr": 0.027700831024930747,
+  "confusion_matrix": [
+    [
+      351,
+      0,
+      0
+    ],
+    [
+      8,
+      619,
+      0
+    ],
+    [
+      2,
+      127,
+      557
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "SUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 0.9722991689750693,
+      "recall": 1.0,
+      "f1": 0.9859550561797753,
+      "support": 351
+    },
+    "CONTRADICTED": {
+      "precision": 0.8297587131367292,
+      "recall": 0.9872408293460925,
+      "f1": 0.9016751638747269,
+      "support": 627
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "precision": 1.0,
+      "recall": 0.8119533527696793,
+      "f1": 0.8962188254223652,
+      "support": 686
+    }
+  }
+}

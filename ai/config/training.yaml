@@ -1,0 +1,49 @@
+# Training configuration
+model:
+  base_model: "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
+  revision: "main"
+  num_labels: 3
+  id2label:
+    0: "SUPPORTED"
+    1: "CONTRADICTED"
+    2: "INSUFFICIENT_EVIDENCE"
+
+training:
+  seed: 42
+  epochs: 5
+  batch_size: 8
+  gradient_accumulation_steps: 2
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  max_length: 256
+  patience: 2
+  class_weights: "balanced"
+  grad_clip: 1.0
+
+data:
+  train: "data/processed/evidencebench/train.jsonl"
+  validation: "data/processed/evidencebench/validation.jsonl"
+  test: "data/processed/evidencebench/test.jsonl"
+  challenge: "data/processed/evidencebench/challenge_test.jsonl"
+  feverous_train: "data/processed/feverous/train.jsonl"
+
+output:
+  checkpoints: "artifacts/checkpoints"
+  best_model: "artifacts/best_model"
+  reports: "artifacts/reports"
+
+experiments:
+  - id: "exp_001_domain_only_2e5"
+    lr: 2.0e-5
+    use_feverous: false
+    note: "Domain-only (EvidenceBench), lr=2e-5"
+  - id: "exp_002_domain_only_1e5"
+    lr: 1.0e-5
+    use_feverous: false
+    note: "Domain-only, lr=1e-5"
+  - id: "exp_003_mixed_2e5"
+    lr: 2.0e-5
+    use_feverous: true
+    note: "Mixed (EvidenceBench + FEVEROUS), lr=2e-5"
+

@@ -1,0 +1,197 @@
+{
+  "test_suite": "untouched_holdout_and_validation_audit",
+  "validation_results": {
+    "partition": "Validation Set (50 Claims)",
+    "total_cases": 50,
+    "raw_accuracy": 34.0,
+    "macro_f1": 0.24074074074074073,
+    "metrics": {
+      "SUPPORTED": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8
+      },
+      "CONTRADICTED": {
+        "precision": 0.5925925925925926,
+        "recall": 0.43243243243243246,
+        "f1": 0.5,
+        "support": 37
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      }
+    },
+    "confusion_matrix": {
+      "SUPPORTED": {
+        "CONTRADICTED": 6,
+        "SUPPORTED": 1,
+        "INSUFFICIENT_EVIDENCE": 1
+      },
+      "CONTRADICTED": {
+        "INSUFFICIENT_EVIDENCE": 21,
+        "CONTRADICTED": 16,
+        "SUPPORTED": 0
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "CONTRADICTED": 5,
+        "INSUFFICIENT_EVIDENCE": 0,
+        "SUPPORTED": 0
+      }
+    },
+    "confusion_matrix_4col": {
+      "SUPPORTED": {
+        "CONTRADICTED": 6,
+        "SUPPORTED": 1,
+        "INSUFFICIENT_EVIDENCE": 1
+      },
+      "CONTRADICTED": {
+        "INSUFFICIENT_EVIDENCE": 20,
+        "CONTRADICTED": 14,
+        "NEEDS_HUMAN_REVIEW": 3
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "CONTRADICTED": 4,
+        "NEEDS_HUMAN_REVIEW": 1
+      }
+    },
+    "category_results": {
+      "Entailment": {
+        "correct": 1,
+        "total": 8
+      },
+      "Negation": {
+        "correct": 0,
+        "total": 7
+      },
+      "Amount Mismatch": {
+        "correct": 6,
+        "total": 8
+      },
+      "Identity Mismatch": {
+        "correct": 3,
+        "total": 7
+      },
+      "Date Mismatch": {
+        "correct": 7,
+        "total": 8
+      },
+      "Conflicting Evidence": {
+        "correct": 0,
+        "total": 7
+      },
+      "Insufficient Evidence": {
+        "correct": 0,
+        "total": 5
+      }
+    },
+    "abstained_count": 4,
+    "abstention_rate": 8.0,
+    "confident_total": 46,
+    "confident_correct": 15,
+    "confident_precision": 32.608695652173914
+  },
+  "holdout_test_results": {
+    "partition": "Untouched Holdout Test Set (50 Claims)",
+    "total_cases": 50,
+    "raw_accuracy": 34.0,
+    "macro_f1": 0.39473104056437386,
+    "metrics": {
+      "SUPPORTED": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      },
+      "CONTRADICTED": {
+        "precision": 0.6875,
+        "recall": 0.2894736842105263,
+        "f1": 0.4074074074074074,
+        "support": 38
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 0.037037037037037035,
+        "recall": 0.2,
+        "f1": 0.0625,
+        "support": 5
+      }
+    },
+    "confusion_matrix": {
+      "SUPPORTED": {
+        "CONTRADICTED": 1,
+        "SUPPORTED": 5,
+        "INSUFFICIENT_EVIDENCE": 1
+      },
+      "CONTRADICTED": {
+        "INSUFFICIENT_EVIDENCE": 25,
+        "CONTRADICTED": 11,
+        "SUPPORTED": 2
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "INSUFFICIENT_EVIDENCE": 1,
+        "CONTRADICTED": 4,
+        "SUPPORTED": 0
+      }
+    },
+    "confusion_matrix_4col": {
+      "SUPPORTED": {
+        "CONTRADICTED": 1,
+        "SUPPORTED": 5,
+        "INSUFFICIENT_EVIDENCE": 1
+      },
+      "CONTRADICTED": {
+        "INSUFFICIENT_EVIDENCE": 25,
+        "CONTRADICTED": 9,
+        "NEEDS_HUMAN_REVIEW": 3,
+        "SUPPORTED": 1
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "INSUFFICIENT_EVIDENCE": 1,
+        "CONTRADICTED": 4
+      }
+    },
+    "category_results": {
+      "Entailment": {
+        "correct": 5,
+        "total": 7
+      },
+      "Negation": {
+        "correct": 0,
+        "total": 8
+      },
+      "Amount Mismatch": {
+        "correct": 3,
+        "total": 7
+      },
+      "Identity Mismatch": {
+        "correct": 3,
+        "total": 8
+      },
+      "Date Mismatch": {
+        "correct": 5,
+        "total": 7
+      },
+      "Conflicting Evidence": {
+        "correct": 0,
+        "total": 8
+      },
+      "Insufficient Evidence": {
+        "correct": 1,
+        "total": 5
+      }
+    },
+    "abstained_count": 3,
+    "abstention_rate": 6.0,
+    "confident_total": 47,
+    "confident_correct": 15,
+    "confident_precision": 31.914893617021278
+  },
+  "abstention_policy": {
+    "min_confidence_threshold": 0.55,
+    "min_margin_threshold": 0.12,
+    "abstention_label": "NEEDS_HUMAN_REVIEW"
+  }
+}

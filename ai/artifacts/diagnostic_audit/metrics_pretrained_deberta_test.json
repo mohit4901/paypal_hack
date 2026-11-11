@@ -1,0 +1,66 @@
+{
+  "model_path": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "data_path": "data/processed/evidencebench/test.jsonl",
+  "n_examples": 1664,
+  "raw_id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "out_idx_to_app_idx": {
+    "0": 0,
+    "1": 2,
+    "2": 1
+  },
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "represented_classes_macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "contradiction_recall": 1.0,
+  "insufficient_evidence_recall": 1.0,
+  "supported_recall": 0.0,
+  "supported_fpr": 0.0,
+  "supported_fdr": null,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      832,
+      0
+    ],
+    [
+      0,
+      0,
+      832
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "SUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "CONTRADICTED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 832
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 832
+    }
+  }
+}

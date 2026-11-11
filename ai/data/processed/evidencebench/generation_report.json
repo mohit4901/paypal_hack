@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-10-28T08:48:01.316836Z",
+  "seed": 42,
+  "target_count": 10000,
+  "total_main": 9984,
+  "train_count": 6656,
+  "validation_count": 1664,
+  "test_count": 1664,
+  "challenge_count": 400,
+  "val_families": [
+    "asset_version_mismatch",
+    "conflicting_status_snapshots",
+    "file_sent_vs_downloaded",
+    "multiple_conflicting_records"
+  ],
+  "test_families": [
+    "conflicting_delivery_events",
+    "delivery_timestamp_missing",
+    "evidence_from_unrelated_transaction",
+    "plausible_but_unestablished"
+  ],
+  "train_label_dist": {
+    "SUPPORTED": 2234,
+    "CONTRADICTED": 1695,
+    "INSUFFICIENT_EVIDENCE": 2727
+  },
+  "val_label_dist": {
+    "SUPPORTED": 351,
+    "INSUFFICIENT_EVIDENCE": 686,
+    "CONTRADICTED": 627
+  },
+  "test_label_dist": {
+    "CONTRADICTED": 832,
+    "INSUFFICIENT_EVIDENCE": 832
+  },
+  "challenge_label_dist": {
+    "INSUFFICIENT_EVIDENCE": 200,
+    "CONTRADICTED": 200
+  },
+  "validation_errors": [],
+  "generators_used": [
+    "payment_captured_vs_created",
+    "licence_issued_vs_accessed",
+    "file_sent_vs_downloaded",
+    "delivery_timestamp_mismatch",
+    "recipient_mismatch",
+    "order_id_mismatch",
+    "course_access_granted_vs_accessed",
+    "asset_version_mismatch",
+    "impossible_event_order",
+    "missing_evidence",
+    "conflicting_delivery_events",
+    "multiple_records_supporting",
+    "claim_broader_than_evidence",
+    "unsupported_claim_details",
+    "currency_amount_mismatch",
+    "refund_claim_missing_confirmation",
+    "evidence_from_unrelated_transaction",
+    "tampered_event_history",
+    "conflicting_status_snapshots",
+    "plausible_but_unestablished",
+    "fully_supported_claim",
+    "multiple_conflicting_records",
+    "incomplete_records_unknown_verdict",
+    "delivery_timestamp_missing"
+  ],
+  "challenge_generators_used": [
+    "challenge_unsupported_detail_in_correct_claim",
+    "challenge_correct_date_wrong_recipient",
+    "challenge_correct_payment_no_delivery_proof",
+    "challenge_only_one_of_multiple_supports"
+  ],
+  "split_type": "group_based_by_scenario_family"
+}

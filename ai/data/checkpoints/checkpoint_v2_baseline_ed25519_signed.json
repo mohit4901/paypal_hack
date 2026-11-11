@@ -1,0 +1,15 @@
+{
+  "checkpoint_type": "PROOFLEDGER_CRYPTOGRAPHIC_ANCHOR_V2",
+  "block_height": 164,
+  "head_event_id": "wh_rev_163_7102",
+  "head_hash": "55ee7ca99ed43a9c5d744baf1c72514a68f89c17c5accbcf382055dd4daececc",
+  "canonical_manifest_digest": "5f47311458acdf3aba1397b25e1a141fae0a2995aa28373a4b655513ca01211d",
+  "timestamp_utc": "2026-11-01T12:00:00Z",
+  "total_events": 164,
+  "signature_algorithm": "Ed25519",
+  "key_identity": "proofledger-authority-v3-isolated",
+  "public_key_hex": "9599d3b3ed9fe4643de0482c1c4e51c6be72f926d7021b93c6a657ec384324dd",
+  "trust_boundary": "OFFLINE_SIGNING_AUTHORITY_SIMULATION",
+  "canonical_digest": "ebe66cc8f2dd6d7fa768d759f34253a5d6b4ab5955179213d58d4767cb0bdd3b",
+  "signature": "c1a8afb3dfc2bec36ea9fe563e581904fe2af0a065b790c297a4baec5a7df3fe7de02a38f81ff8c2876ef323ccb8ea4aa22b937825ed3202a94ef5fa6357f30c"
+}

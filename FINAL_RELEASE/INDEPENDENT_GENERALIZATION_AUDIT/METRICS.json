@@ -1,0 +1,1511 @@
+{
+  "dataset": "ai/data/evaluation/proofledger_unseen_v1/dataset.jsonl",
+  "systems": {
+    "A_candidate": {
+      "description": "Candidate Fine-Tuned DeBERTa-v3",
+      "source_predictions_file": "FINAL_RELEASE/INDEPENDENT_GENERALIZATION_AUDIT/CANDIDATE_PREDICTIONS.jsonl",
+      "n": 600,
+      "correct": 492,
+      "accuracy": 0.82,
+      "macro_f1": 0.82255,
+      "weighted_f1": 0.82255,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 200,
+          "predicted_count": 183,
+          "precision": 0.983607,
+          "recall": 0.9,
+          "f1": 0.939948
+        },
+        "CONTRADICTED": {
+          "support": 200,
+          "predicted_count": 161,
+          "precision": 0.857143,
+          "recall": 0.69,
+          "f1": 0.764543
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "support": 200,
+          "predicted_count": 256,
+          "precision": 0.679688,
+          "recall": 0.87,
+          "f1": 0.763158
+        }
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 180,
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 20
+        },
+        "CONTRADICTED": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 138,
+          "INSUFFICIENT_EVIDENCE": 62
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "SUPPORTED": 3,
+          "CONTRADICTED": 23,
+          "INSUFFICIENT_EVIDENCE": 174
+        }
+      },
+      "false_contradiction_metrics": {
+        "insuf_to_con_count": 23,
+        "insuf_support": 200,
+        "insuf_to_con_rate": 0.115,
+        "sup_to_con_count": 0,
+        "sup_support": 200,
+        "sup_to_con_rate": 0.0,
+        "overall_false_contradiction_count": 23,
+        "non_contradicted_support": 400,
+        "overall_false_contradiction_rate": 0.0575,
+        "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+      },
+      "bootstrap_95ci": {
+        "n_bootstrap": 2000,
+        "seed": 42,
+        "accuracy_ci95": [
+          0.79,
+          0.85
+        ],
+        "macro_f1_ci95": [
+          0.79238,
+          0.852069
+        ],
+        "insuf_to_con_rate_ci95": [
+          0.073165,
+          0.16
+        ],
+        "overall_fcr_ci95": [
+          0.036314,
+          0.080783
+        ]
+      },
+      "calibration_raw_scores": {
+        "n_scored": 600,
+        "ece_10bin": 0.099971,
+        "brier_score_multiclass": 0.295819,
+        "bins": [
+          {
+            "range": "[0.4, 0.5]",
+            "count": 1,
+            "mean_conf": 0.498,
+            "empirical_acc": 1.0,
+            "gap": 0.502
+          },
+          {
+            "range": "[0.5, 0.6]",
+            "count": 13,
+            "mean_conf": 0.5507,
+            "empirical_acc": 0.5385,
+            "gap": 0.0122
+          },
+          {
+            "range": "[0.6, 0.7]",
+            "count": 32,
+            "mean_conf": 0.6524,
+            "empirical_acc": 0.5,
+            "gap": 0.1524
+          },
+          {
+            "range": "[0.7, 0.8]",
+            "count": 51,
+            "mean_conf": 0.7529,
+            "empirical_acc": 0.6471,
+            "gap": 0.1058
+          },
+          {
+            "range": "[0.8, 0.9]",
+            "count": 64,
+            "mean_conf": 0.8617,
+            "empirical_acc": 0.6719,
+            "gap": 0.1898
+          },
+          {
+            "range": "[0.9, 1.0]",
+            "count": 439,
+            "mean_conf": 0.977,
+            "empirical_acc": 0.8929,
+            "gap": 0.084
+          }
+        ]
+      },
+      "calibration_temperature_scaled": null,
+      "abstention_analysis": {
+        "total": 600,
+        "abstained_count": 9,
+        "abstention_rate": 0.015,
+        "answered_count": 591,
+        "coverage": 0.985,
+        "selective_accuracy": 0.822335,
+        "selective_macro_f1": 0.824714,
+        "selective_overall_fcr": 0.058228,
+        "abstained_gold_distribution": {
+          "CONTRADICTED": 4,
+          "INSUFFICIENT_EVIDENCE": 2,
+          "SUPPORTED": 3
+        }
+      },
+      "latency_ms": {
+        "mean": 53.588,
+        "p50": 49.409,
+        "p95": 83.176,
+        "p99": 108.641
+      },
+      "runtime_profile": {
+        "model_size_bytes": 746374870,
+        "load_time_ms": 469.31,
+        "device": "mps",
+        "truncated_count": 0,
+        "rule_triggers": null
+      },
+      "per_family": {
+        "archive_gaps_and_untracked_mail": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 3,
+          "non_con_n": 28,
+          "fcr": 0.107143
+        },
+        "carrier_manifest_vs_label_prep": {
+          "n": 45,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "checkout_auth_vs_settlement": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "chronological_event_paradox": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "customs_transit_vs_final_delivery": {
+          "n": 45,
+          "accuracy": 0.933333,
+          "false_contradictions": 3,
+          "non_con_n": 30,
+          "fcr": 0.1
+        },
+        "destination_address_divergence": {
+          "n": 45,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "digital_utilization_vs_provisioning": {
+          "n": 42,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "direct_merchant_claim_refutation": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "duplicate_billing_and_fx": {
+          "n": 42,
+          "accuracy": 0.880952,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "multi_box_partial_fulfillment": {
+          "n": 45,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "plausible_but_non_probative_docs": {
+          "n": 42,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "refund_lifecycle_stages": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 3,
+          "non_con_n": 28,
+          "fcr": 0.107143
+        },
+        "sku_variant_mismatch": {
+          "n": 42,
+          "accuracy": 0.52381,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "subjective_complaint_vs_objective_delivery": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        }
+      }
+    },
+    "B_pretrained": {
+      "description": "Pretrained MoritzLaurer DeBERTa-v3 NLI",
+      "source_predictions_file": "FINAL_RELEASE/INDEPENDENT_GENERALIZATION_AUDIT/PRETRAINED_PREDICTIONS.jsonl",
+      "n": 600,
+      "correct": 396,
+      "accuracy": 0.66,
+      "macro_f1": 0.648368,
+      "weighted_f1": 0.648368,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 200,
+          "predicted_count": 82,
+          "precision": 1.0,
+          "recall": 0.41,
+          "f1": 0.58156
+        },
+        "CONTRADICTED": {
+          "support": 200,
+          "predicted_count": 270,
+          "precision": 0.677778,
+          "recall": 0.915,
+          "f1": 0.778723
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "support": 200,
+          "predicted_count": 248,
+          "precision": 0.528226,
+          "recall": 0.655,
+          "f1": 0.584821
+        }
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 82,
+          "CONTRADICTED": 18,
+          "INSUFFICIENT_EVIDENCE": 100
+        },
+        "CONTRADICTED": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 183,
+          "INSUFFICIENT_EVIDENCE": 17
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 69,
+          "INSUFFICIENT_EVIDENCE": 131
+        }
+      },
+      "false_contradiction_metrics": {
+        "insuf_to_con_count": 69,
+        "insuf_support": 200,
+        "insuf_to_con_rate": 0.345,
+        "sup_to_con_count": 18,
+        "sup_support": 200,
+        "sup_to_con_rate": 0.09,
+        "overall_false_contradiction_count": 87,
+        "non_contradicted_support": 400,
+        "overall_false_contradiction_rate": 0.2175,
+        "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+      },
+      "bootstrap_95ci": {
+        "n_bootstrap": 2000,
+        "seed": 42,
+        "accuracy_ci95": [
+          0.621667,
+          0.698333
+        ],
+        "macro_f1_ci95": [
+          0.608121,
+          0.68728
+        ],
+        "insuf_to_con_rate_ci95": [
+          0.279182,
+          0.409762
+        ],
+        "overall_fcr_ci95": [
+          0.177215,
+          0.258623
+        ]
+      },
+      "calibration_raw_scores": {
+        "n_scored": 600,
+        "ece_10bin": 0.259429,
+        "brier_score_multiclass": 0.595075,
+        "bins": [
+          {
+            "range": "[0.3, 0.4]",
+            "count": 1,
+            "mean_conf": 0.3953,
+            "empirical_acc": 1.0,
+            "gap": 0.6047
+          },
+          {
+            "range": "[0.4, 0.5]",
+            "count": 15,
+            "mean_conf": 0.4711,
+            "empirical_acc": 0.5333,
+            "gap": 0.0623
+          },
+          {
+            "range": "[0.5, 0.6]",
+            "count": 24,
+            "mean_conf": 0.5422,
+            "empirical_acc": 0.4583,
+            "gap": 0.0839
+          },
+          {
+            "range": "[0.6, 0.7]",
+            "count": 20,
+            "mean_conf": 0.6666,
+            "empirical_acc": 0.45,
+            "gap": 0.2166
+          },
+          {
+            "range": "[0.7, 0.8]",
+            "count": 48,
+            "mean_conf": 0.7545,
+            "empirical_acc": 0.5417,
+            "gap": 0.2128
+          },
+          {
+            "range": "[0.8, 0.9]",
+            "count": 47,
+            "mean_conf": 0.8499,
+            "empirical_acc": 0.7234,
+            "gap": 0.1265
+          },
+          {
+            "range": "[0.9, 1.0]",
+            "count": 445,
+            "mean_conf": 0.9856,
+            "empirical_acc": 0.6899,
+            "gap": 0.2958
+          }
+        ]
+      },
+      "calibration_temperature_scaled": null,
+      "abstention_analysis": {
+        "total": 600,
+        "abstained_count": 31,
+        "abstention_rate": 0.051667,
+        "answered_count": 569,
+        "coverage": 0.948333,
+        "selective_accuracy": 0.666081,
+        "selective_macro_f1": 0.651822,
+        "selective_overall_fcr": 0.218329,
+        "abstained_gold_distribution": {
+          "SUPPORTED": 21,
+          "INSUFFICIENT_EVIDENCE": 8,
+          "CONTRADICTED": 2
+        }
+      },
+      "latency_ms": {
+        "mean": 49.677,
+        "p50": 45.348,
+        "p95": 72.799,
+        "p99": 127.634
+      },
+      "runtime_profile": {
+        "model_size_bytes": 380001591,
+        "load_time_ms": 1904.4,
+        "device": "mps",
+        "truncated_count": 0,
+        "rule_triggers": null
+      },
+      "per_family": {
+        "archive_gaps_and_untracked_mail": {
+          "n": 42,
+          "accuracy": 0.833333,
+          "false_contradictions": 7,
+          "non_con_n": 28,
+          "fcr": 0.25
+        },
+        "carrier_manifest_vs_label_prep": {
+          "n": 45,
+          "accuracy": 0.977778,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "checkout_auth_vs_settlement": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "chronological_event_paradox": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "customs_transit_vs_final_delivery": {
+          "n": 45,
+          "accuracy": 0.644444,
+          "false_contradictions": 15,
+          "non_con_n": 30,
+          "fcr": 0.5
+        },
+        "destination_address_divergence": {
+          "n": 45,
+          "accuracy": 0.666667,
+          "false_contradictions": 15,
+          "non_con_n": 30,
+          "fcr": 0.5
+        },
+        "digital_utilization_vs_provisioning": {
+          "n": 42,
+          "accuracy": 0.761905,
+          "false_contradictions": 8,
+          "non_con_n": 28,
+          "fcr": 0.285714
+        },
+        "direct_merchant_claim_refutation": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "duplicate_billing_and_fx": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "multi_box_partial_fulfillment": {
+          "n": 45,
+          "accuracy": 0.755556,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "plausible_but_non_probative_docs": {
+          "n": 42,
+          "accuracy": 0.809524,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "refund_lifecycle_stages": {
+          "n": 42,
+          "accuracy": 0.452381,
+          "false_contradictions": 19,
+          "non_con_n": 28,
+          "fcr": 0.678571
+        },
+        "sku_variant_mismatch": {
+          "n": 42,
+          "accuracy": 0.642857,
+          "false_contradictions": 4,
+          "non_con_n": 28,
+          "fcr": 0.142857
+        },
+        "subjective_complaint_vs_objective_delivery": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 5,
+          "non_con_n": 28,
+          "fcr": 0.178571
+        }
+      }
+    },
+    "C_legacy": {
+      "description": "Legacy Checkpoint (ai/artifacts/best_model)",
+      "source_predictions_file": "FINAL_RELEASE/INDEPENDENT_GENERALIZATION_AUDIT/LEGACY_PREDICTIONS.jsonl",
+      "n": 600,
+      "correct": 220,
+      "accuracy": 0.366667,
+      "macro_f1": 0.389063,
+      "weighted_f1": 0.389063,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 200,
+          "predicted_count": 77,
+          "precision": 0.935065,
+          "recall": 0.36,
+          "f1": 0.519856
+        },
+        "CONTRADICTED": {
+          "support": 200,
+          "predicted_count": 328,
+          "precision": 0.243902,
+          "recall": 0.4,
+          "f1": 0.30303
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "support": 200,
+          "predicted_count": 195,
+          "precision": 0.348718,
+          "recall": 0.34,
+          "f1": 0.344304
+        }
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 72,
+          "CONTRADICTED": 116,
+          "INSUFFICIENT_EVIDENCE": 12
+        },
+        "CONTRADICTED": {
+          "SUPPORTED": 5,
+          "CONTRADICTED": 80,
+          "INSUFFICIENT_EVIDENCE": 115
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 132,
+          "INSUFFICIENT_EVIDENCE": 68
+        }
+      },
+      "false_contradiction_metrics": {
+        "insuf_to_con_count": 132,
+        "insuf_support": 200,
+        "insuf_to_con_rate": 0.66,
+        "sup_to_con_count": 116,
+        "sup_support": 200,
+        "sup_to_con_rate": 0.58,
+        "overall_false_contradiction_count": 248,
+        "non_contradicted_support": 400,
+        "overall_false_contradiction_rate": 0.62,
+        "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+      },
+      "bootstrap_95ci": {
+        "n_bootstrap": 2000,
+        "seed": 42,
+        "accuracy_ci95": [
+          0.328333,
+          0.403333
+        ],
+        "macro_f1_ci95": [
+          0.349732,
+          0.425756
+        ],
+        "insuf_to_con_rate_ci95": [
+          0.592218,
+          0.725392
+        ],
+        "overall_fcr_ci95": [
+          0.574359,
+          0.669882
+        ]
+      },
+      "calibration_raw_scores": {
+        "n_scored": 600,
+        "ece_10bin": 0.488427,
+        "brier_score_multiclass": 1.073717,
+        "bins": [
+          {
+            "range": "[0.3, 0.4]",
+            "count": 4,
+            "mean_conf": 0.3568,
+            "empirical_acc": 0.5,
+            "gap": 0.1432
+          },
+          {
+            "range": "[0.4, 0.5]",
+            "count": 22,
+            "mean_conf": 0.4677,
+            "empirical_acc": 0.6364,
+            "gap": 0.1687
+          },
+          {
+            "range": "[0.5, 0.6]",
+            "count": 27,
+            "mean_conf": 0.553,
+            "empirical_acc": 0.4815,
+            "gap": 0.0715
+          },
+          {
+            "range": "[0.6, 0.7]",
+            "count": 49,
+            "mean_conf": 0.6524,
+            "empirical_acc": 0.5918,
+            "gap": 0.0606
+          },
+          {
+            "range": "[0.7, 0.8]",
+            "count": 61,
+            "mean_conf": 0.7632,
+            "empirical_acc": 0.6721,
+            "gap": 0.0911
+          },
+          {
+            "range": "[0.8, 0.9]",
+            "count": 126,
+            "mean_conf": 0.8557,
+            "empirical_acc": 0.4683,
+            "gap": 0.3874
+          },
+          {
+            "range": "[0.9, 1.0]",
+            "count": 311,
+            "mean_conf": 0.9373,
+            "empirical_acc": 0.1994,
+            "gap": 0.7379
+          }
+        ]
+      },
+      "calibration_temperature_scaled": null,
+      "abstention_analysis": {
+        "total": 600,
+        "abstained_count": 40,
+        "abstention_rate": 0.066667,
+        "answered_count": 560,
+        "coverage": 0.933333,
+        "selective_accuracy": 0.353571,
+        "selective_macro_f1": 0.377598,
+        "selective_overall_fcr": 0.651099,
+        "abstained_gold_distribution": {
+          "SUPPORTED": 29,
+          "CONTRADICTED": 4,
+          "INSUFFICIENT_EVIDENCE": 7
+        }
+      },
+      "latency_ms": {
+        "mean": 44.102,
+        "p50": 43.514,
+        "p95": 56.062,
+        "p99": 73.075
+      },
+      "runtime_profile": {
+        "model_size_bytes": 377526481,
+        "load_time_ms": 894.45,
+        "device": "mps",
+        "truncated_count": 0,
+        "rule_triggers": null
+      },
+      "per_family": {
+        "archive_gaps_and_untracked_mail": {
+          "n": 42,
+          "accuracy": 0.404762,
+          "false_contradictions": 11,
+          "non_con_n": 28,
+          "fcr": 0.392857
+        },
+        "carrier_manifest_vs_label_prep": {
+          "n": 45,
+          "accuracy": 0.377778,
+          "false_contradictions": 20,
+          "non_con_n": 30,
+          "fcr": 0.666667
+        },
+        "checkout_auth_vs_settlement": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "chronological_event_paradox": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 28,
+          "non_con_n": 28,
+          "fcr": 1.0
+        },
+        "customs_transit_vs_final_delivery": {
+          "n": 45,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "destination_address_divergence": {
+          "n": 45,
+          "accuracy": 0.555556,
+          "false_contradictions": 15,
+          "non_con_n": 30,
+          "fcr": 0.5
+        },
+        "digital_utilization_vs_provisioning": {
+          "n": 42,
+          "accuracy": 0.190476,
+          "false_contradictions": 16,
+          "non_con_n": 28,
+          "fcr": 0.571429
+        },
+        "direct_merchant_claim_refutation": {
+          "n": 42,
+          "accuracy": 0.047619,
+          "false_contradictions": 26,
+          "non_con_n": 28,
+          "fcr": 0.928571
+        },
+        "duplicate_billing_and_fx": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 28,
+          "non_con_n": 28,
+          "fcr": 1.0
+        },
+        "multi_box_partial_fulfillment": {
+          "n": 45,
+          "accuracy": 0.244444,
+          "false_contradictions": 19,
+          "non_con_n": 30,
+          "fcr": 0.633333
+        },
+        "plausible_but_non_probative_docs": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "refund_lifecycle_stages": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "sku_variant_mismatch": {
+          "n": 42,
+          "accuracy": 0.642857,
+          "false_contradictions": 15,
+          "non_con_n": 28,
+          "fcr": 0.535714
+        },
+        "subjective_complaint_vs_objective_delivery": {
+          "n": 42,
+          "accuracy": 0.309524,
+          "false_contradictions": 28,
+          "non_con_n": 28,
+          "fcr": 1.0
+        }
+      }
+    },
+    "D_rules_only": {
+      "description": "Rules-Only Deterministic Engine",
+      "source_predictions_file": "FINAL_RELEASE/INDEPENDENT_GENERALIZATION_AUDIT/RULES_ONLY_PREDICTIONS.jsonl",
+      "n": 600,
+      "correct": 214,
+      "accuracy": 0.356667,
+      "macro_f1": 0.213249,
+      "weighted_f1": 0.213249,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 200,
+          "predicted_count": 14,
+          "precision": 1.0,
+          "recall": 0.07,
+          "f1": 0.130841
+        },
+        "CONTRADICTED": {
+          "support": 200,
+          "predicted_count": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "support": 200,
+          "predicted_count": 586,
+          "precision": 0.341297,
+          "recall": 1.0,
+          "f1": 0.508906
+        }
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 14,
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 186
+        },
+        "CONTRADICTED": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 200
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 200
+        }
+      },
+      "false_contradiction_metrics": {
+        "insuf_to_con_count": 0,
+        "insuf_support": 200,
+        "insuf_to_con_rate": 0.0,
+        "sup_to_con_count": 0,
+        "sup_support": 200,
+        "sup_to_con_rate": 0.0,
+        "overall_false_contradiction_count": 0,
+        "non_contradicted_support": 400,
+        "overall_false_contradiction_rate": 0.0,
+        "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+      },
+      "bootstrap_95ci": {
+        "n_bootstrap": 2000,
+        "seed": 42,
+        "accuracy_ci95": [
+          0.318333,
+          0.395
+        ],
+        "macro_f1_ci95": [
+          0.186771,
+          0.239491
+        ],
+        "insuf_to_con_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "overall_fcr_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration_raw_scores": null,
+      "calibration_temperature_scaled": null,
+      "abstention_analysis": {
+        "total": 600,
+        "abstained_count": 0,
+        "abstention_rate": 0.0,
+        "answered_count": 600,
+        "coverage": 1.0,
+        "selective_accuracy": 0.356667,
+        "selective_macro_f1": 0.213249,
+        "selective_overall_fcr": 0.0,
+        "abstained_gold_distribution": {}
+      },
+      "latency_ms": {
+        "mean": 0.024,
+        "p50": 0.022,
+        "p95": 0.03,
+        "p99": 0.033
+      },
+      "runtime_profile": {
+        "model_size_bytes": 0,
+        "load_time_ms": 0.15,
+        "device": "cpu",
+        "truncated_count": null,
+        "rule_triggers": 0
+      },
+      "per_family": {
+        "archive_gaps_and_untracked_mail": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "carrier_manifest_vs_label_prep": {
+          "n": 45,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "checkout_auth_vs_settlement": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "chronological_event_paradox": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "customs_transit_vs_final_delivery": {
+          "n": 45,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "destination_address_divergence": {
+          "n": 45,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "digital_utilization_vs_provisioning": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "direct_merchant_claim_refutation": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "duplicate_billing_and_fx": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "multi_box_partial_fulfillment": {
+          "n": 45,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "plausible_but_non_probative_docs": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "refund_lifecycle_stages": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "sku_variant_mismatch": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "subjective_complaint_vs_objective_delivery": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        }
+      }
+    },
+    "E_hybrid": {
+      "description": "Production Hybrid (Rules-First + Candidate)",
+      "source_predictions_file": "FINAL_RELEASE/INDEPENDENT_GENERALIZATION_AUDIT/HYBRID_PREDICTIONS.jsonl",
+      "n": 600,
+      "correct": 492,
+      "accuracy": 0.82,
+      "macro_f1": 0.82255,
+      "weighted_f1": 0.82255,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 200,
+          "predicted_count": 183,
+          "precision": 0.983607,
+          "recall": 0.9,
+          "f1": 0.939948
+        },
+        "CONTRADICTED": {
+          "support": 200,
+          "predicted_count": 161,
+          "precision": 0.857143,
+          "recall": 0.69,
+          "f1": 0.764543
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "support": 200,
+          "predicted_count": 256,
+          "precision": 0.679688,
+          "recall": 0.87,
+          "f1": 0.763158
+        }
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 180,
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 20
+        },
+        "CONTRADICTED": {
+          "SUPPORTED": 0,
+          "CONTRADICTED": 138,
+          "INSUFFICIENT_EVIDENCE": 62
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "SUPPORTED": 3,
+          "CONTRADICTED": 23,
+          "INSUFFICIENT_EVIDENCE": 174
+        }
+      },
+      "false_contradiction_metrics": {
+        "insuf_to_con_count": 23,
+        "insuf_support": 200,
+        "insuf_to_con_rate": 0.115,
+        "sup_to_con_count": 0,
+        "sup_support": 200,
+        "sup_to_con_rate": 0.0,
+        "overall_false_contradiction_count": 23,
+        "non_contradicted_support": 400,
+        "overall_false_contradiction_rate": 0.0575,
+        "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+      },
+      "bootstrap_95ci": {
+        "n_bootstrap": 2000,
+        "seed": 42,
+        "accuracy_ci95": [
+          0.79,
+          0.85
+        ],
+        "macro_f1_ci95": [
+          0.79238,
+          0.852069
+        ],
+        "insuf_to_con_rate_ci95": [
+          0.073165,
+          0.16
+        ],
+        "overall_fcr_ci95": [
+          0.036314,
+          0.080783
+        ]
+      },
+      "calibration_raw_scores": {
+        "n_scored": 600,
+        "ece_10bin": 0.099971,
+        "brier_score_multiclass": 0.295819,
+        "bins": [
+          {
+            "range": "[0.4, 0.5]",
+            "count": 1,
+            "mean_conf": 0.498,
+            "empirical_acc": 1.0,
+            "gap": 0.502
+          },
+          {
+            "range": "[0.5, 0.6]",
+            "count": 13,
+            "mean_conf": 0.5507,
+            "empirical_acc": 0.5385,
+            "gap": 0.0122
+          },
+          {
+            "range": "[0.6, 0.7]",
+            "count": 32,
+            "mean_conf": 0.6524,
+            "empirical_acc": 0.5,
+            "gap": 0.1524
+          },
+          {
+            "range": "[0.7, 0.8]",
+            "count": 51,
+            "mean_conf": 0.7529,
+            "empirical_acc": 0.6471,
+            "gap": 0.1058
+          },
+          {
+            "range": "[0.8, 0.9]",
+            "count": 64,
+            "mean_conf": 0.8617,
+            "empirical_acc": 0.6719,
+            "gap": 0.1898
+          },
+          {
+            "range": "[0.9, 1.0]",
+            "count": 439,
+            "mean_conf": 0.977,
+            "empirical_acc": 0.8929,
+            "gap": 0.084
+          }
+        ]
+      },
+      "calibration_temperature_scaled": {
+        "n_scored": 600,
+        "ece_10bin": 0.057175,
+        "brier_score_multiclass": 0.279431,
+        "bins": [
+          {
+            "range": "[0.4, 0.5]",
+            "count": 1,
+            "mean_conf": 0.4904,
+            "empirical_acc": 1.0,
+            "gap": 0.5096
+          },
+          {
+            "range": "[0.5, 0.6]",
+            "count": 27,
+            "mean_conf": 0.5511,
+            "empirical_acc": 0.3704,
+            "gap": 0.1807
+          },
+          {
+            "range": "[0.6, 0.7]",
+            "count": 52,
+            "mean_conf": 0.6533,
+            "empirical_acc": 0.6346,
+            "gap": 0.0186
+          },
+          {
+            "range": "[0.7, 0.8]",
+            "count": 61,
+            "mean_conf": 0.7503,
+            "empirical_acc": 0.6885,
+            "gap": 0.0617
+          },
+          {
+            "range": "[0.8, 0.9]",
+            "count": 111,
+            "mean_conf": 0.8547,
+            "empirical_acc": 0.6577,
+            "gap": 0.1971
+          },
+          {
+            "range": "[0.9, 1.0]",
+            "count": 348,
+            "mean_conf": 0.9635,
+            "empirical_acc": 0.9569,
+            "gap": 0.0066
+          }
+        ]
+      },
+      "abstention_analysis": {
+        "total": 600,
+        "abstained_count": 9,
+        "abstention_rate": 0.015,
+        "answered_count": 591,
+        "coverage": 0.985,
+        "selective_accuracy": 0.822335,
+        "selective_macro_f1": 0.824714,
+        "selective_overall_fcr": 0.058228,
+        "abstained_gold_distribution": {
+          "CONTRADICTED": 4,
+          "INSUFFICIENT_EVIDENCE": 2,
+          "SUPPORTED": 3
+        }
+      },
+      "latency_ms": {
+        "mean": 54.471,
+        "p50": 48.058,
+        "p95": 89.414,
+        "p99": 153.32
+      },
+      "runtime_profile": {
+        "model_size_bytes": 746374870,
+        "load_time_ms": 628.21,
+        "device": "mps",
+        "truncated_count": null,
+        "rule_triggers": 0
+      },
+      "per_family": {
+        "archive_gaps_and_untracked_mail": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 3,
+          "non_con_n": 28,
+          "fcr": 0.107143
+        },
+        "carrier_manifest_vs_label_prep": {
+          "n": 45,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "checkout_auth_vs_settlement": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 14,
+          "non_con_n": 28,
+          "fcr": 0.5
+        },
+        "chronological_event_paradox": {
+          "n": 42,
+          "accuracy": 0.333333,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "customs_transit_vs_final_delivery": {
+          "n": 45,
+          "accuracy": 0.933333,
+          "false_contradictions": 3,
+          "non_con_n": 30,
+          "fcr": 0.1
+        },
+        "destination_address_divergence": {
+          "n": 45,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "digital_utilization_vs_provisioning": {
+          "n": 42,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "direct_merchant_claim_refutation": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "duplicate_billing_and_fx": {
+          "n": 42,
+          "accuracy": 0.880952,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "multi_box_partial_fulfillment": {
+          "n": 45,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 30,
+          "fcr": 0.0
+        },
+        "plausible_but_non_probative_docs": {
+          "n": 42,
+          "accuracy": 1.0,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "refund_lifecycle_stages": {
+          "n": 42,
+          "accuracy": 0.928571,
+          "false_contradictions": 3,
+          "non_con_n": 28,
+          "fcr": 0.107143
+        },
+        "sku_variant_mismatch": {
+          "n": 42,
+          "accuracy": 0.52381,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        },
+        "subjective_complaint_vs_objective_delivery": {
+          "n": 42,
+          "accuracy": 0.666667,
+          "false_contradictions": 0,
+          "non_con_n": 28,
+          "fcr": 0.0
+        }
+      }
+    }
+  },
+  "paired_comparisons_vs_candidate": {
+    "A_candidate_vs_B_pretrained": {
+      "n": 600,
+      "a_only_correct": 144,
+      "b_only_correct": 48,
+      "both_correct": 348,
+      "both_wrong": 60,
+      "delta_accuracy": 0.16,
+      "delta_accuracy_ci95": [
+        0.116667,
+        0.203333
+      ],
+      "mcnemar_chi2_cc": 47.0052,
+      "mcnemar_exact_p": 2.438e-12
+    },
+    "A_candidate_vs_C_legacy": {
+      "n": 600,
+      "a_only_correct": 361,
+      "b_only_correct": 89,
+      "both_correct": 131,
+      "both_wrong": 19,
+      "delta_accuracy": 0.453333,
+      "delta_accuracy_ci95": [
+        0.396667,
+        0.51
+      ],
+      "mcnemar_chi2_cc": 163.2022,
+      "mcnemar_exact_p": 6.651e-40
+    },
+    "A_candidate_vs_D_rules_only": {
+      "n": 600,
+      "a_only_correct": 304,
+      "b_only_correct": 26,
+      "both_correct": 188,
+      "both_wrong": 82,
+      "delta_accuracy": 0.463333,
+      "delta_accuracy_ci95": [
+        0.416667,
+        0.51
+      ],
+      "mcnemar_chi2_cc": 232.5121,
+      "mcnemar_exact_p": 2.73e-61
+    },
+    "A_candidate_vs_E_hybrid": {
+      "n": 600,
+      "a_only_correct": 0,
+      "b_only_correct": 0,
+      "both_correct": 492,
+      "both_wrong": 108,
+      "delta_accuracy": 0.0,
+      "delta_accuracy_ci95": [
+        0.0,
+        0.0
+      ],
+      "mcnemar_chi2_cc": 0.0,
+      "mcnemar_exact_p": 1.0
+    }
+  },
+  "fixed_seed_random_subset_n150": {
+    "seed": 20261111,
+    "n": 150,
+    "sampled_label_distribution": {
+      "CONTRADICTED": 47,
+      "SUPPORTED": 55,
+      "INSUFFICIENT_EVIDENCE": 48
+    },
+    "sample_ids_sha256_first10": [
+      "UNV1-0008-b030742a",
+      "UNV1-0012-ad603ed0",
+      "UNV1-0017-c2652f35",
+      "UNV1-0032-aa5e0965",
+      "UNV1-0035-4d063773",
+      "UNV1-0036-7b277fb3",
+      "UNV1-0044-714309e6",
+      "UNV1-0050-ce817912",
+      "UNV1-0054-efc489d2",
+      "UNV1-0055-9a651ed5"
+    ],
+    "systems": {
+      "A_candidate": {
+        "accuracy": 0.82,
+        "macro_f1": 0.816562,
+        "weighted_f1": 0.822397,
+        "insuf_to_con_rate": 0.125,
+        "overall_fcr": 0.058252,
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 50,
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 5
+          },
+          "CONTRADICTED": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 33,
+            "INSUFFICIENT_EVIDENCE": 14
+          },
+          "INSUFFICIENT_EVIDENCE": {
+            "SUPPORTED": 2,
+            "CONTRADICTED": 6,
+            "INSUFFICIENT_EVIDENCE": 40
+          }
+        }
+      },
+      "B_pretrained": {
+        "accuracy": 0.673333,
+        "macro_f1": 0.671315,
+        "weighted_f1": 0.668346,
+        "insuf_to_con_rate": 0.291667,
+        "overall_fcr": 0.165049,
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 25,
+            "CONTRADICTED": 3,
+            "INSUFFICIENT_EVIDENCE": 27
+          },
+          "CONTRADICTED": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 42,
+            "INSUFFICIENT_EVIDENCE": 5
+          },
+          "INSUFFICIENT_EVIDENCE": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 14,
+            "INSUFFICIENT_EVIDENCE": 34
+          }
+        }
+      },
+      "C_legacy": {
+        "accuracy": 0.38,
+        "macro_f1": 0.402607,
+        "weighted_f1": 0.411221,
+        "insuf_to_con_rate": 0.666667,
+        "overall_fcr": 0.621359,
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 22,
+            "CONTRADICTED": 32,
+            "INSUFFICIENT_EVIDENCE": 1
+          },
+          "CONTRADICTED": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 19,
+            "INSUFFICIENT_EVIDENCE": 28
+          },
+          "INSUFFICIENT_EVIDENCE": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 32,
+            "INSUFFICIENT_EVIDENCE": 16
+          }
+        }
+      },
+      "D_rules_only": {
+        "accuracy": 0.34,
+        "macro_f1": 0.198585,
+        "weighted_f1": 0.195469,
+        "insuf_to_con_rate": 0.0,
+        "overall_fcr": 0.0,
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 3,
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 52
+          },
+          "CONTRADICTED": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 47
+          },
+          "INSUFFICIENT_EVIDENCE": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 48
+          }
+        }
+      },
+      "E_hybrid": {
+        "accuracy": 0.82,
+        "macro_f1": 0.816562,
+        "weighted_f1": 0.822397,
+        "insuf_to_con_rate": 0.125,
+        "overall_fcr": 0.058252,
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 50,
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 5
+          },
+          "CONTRADICTED": {
+            "SUPPORTED": 0,
+            "CONTRADICTED": 33,
+            "INSUFFICIENT_EVIDENCE": 14
+          },
+          "INSUFFICIENT_EVIDENCE": {
+            "SUPPORTED": 2,
+            "CONTRADICTED": 6,
+            "INSUFFICIENT_EVIDENCE": 40
+          }
+        }
+      }
+    }
+  }
+}

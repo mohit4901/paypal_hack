@@ -1,0 +1,55 @@
+{
+  "A_candidate": {
+    "system": "CANDIDATE_DEBERTA_V3_INR_V1",
+    "model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+    "resolved_disk_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+    "model_size_bytes": 746374870,
+    "load_time_ms": 469.31,
+    "device": "mps",
+    "n_samples": 600,
+    "truncated_count": 0,
+    "abstained_count": 9
+  },
+  "B_pretrained": {
+    "system": "PRETRAINED_DEBERTA_V3_MNLI_FEVER_ANLI",
+    "model_path": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "resolved_disk_path": "/Users/mohitmudgil/.cache/huggingface/hub/models--MoritzLaurer--DeBERTa-v3-base-mnli-fever-anli/snapshots/6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+    "model_size_bytes": 380001591,
+    "load_time_ms": 1904.4,
+    "device": "mps",
+    "n_samples": 600,
+    "truncated_count": 0,
+    "abstained_count": 31
+  },
+  "C_legacy": {
+    "system": "LEGACY_BEST_MODEL",
+    "model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/best_model",
+    "resolved_disk_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/best_model",
+    "model_size_bytes": 377526481,
+    "load_time_ms": 894.45,
+    "device": "mps",
+    "n_samples": 600,
+    "truncated_count": 0,
+    "abstained_count": 40
+  },
+  "D_rules_only": {
+    "system": "RULES_ONLY",
+    "model_path": null,
+    "model_size_bytes": 0,
+    "load_time_ms": 0.15,
+    "device": "cpu",
+    "n_samples": 600,
+    "rule_triggers": 0,
+    "abstained_count": 0
+  },
+  "E_hybrid": {
+    "system": "HYBRID_PRODUCTION",
+    "model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+    "model_size_bytes": 746374870,
+    "load_time_ms": 628.21,
+    "device": "mps",
+    "n_samples": 600,
+    "rule_triggers": 0,
+    "abstained_count": 9
+  }
+}

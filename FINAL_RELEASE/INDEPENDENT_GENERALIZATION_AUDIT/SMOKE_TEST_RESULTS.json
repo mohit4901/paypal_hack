@@ -1,0 +1,256 @@
+{
+  "staging_archive": {
+    "staging_dir_exists": true,
+    "source_zip_bytes": 384118106,
+    "source_zip_sha256": "d3dc6b2135b910be08e568d7dbd9e524c4f1d1064e33f8f8630d5a60fe38d2eb",
+    "weights_zip_bytes": 473017624,
+    "weights_zip_sha256": "f74a470ec3de1a640e8c17d619745c7ceeb16bd102d93b17bd530906d97ac46f",
+    "candidate_weights_present": true,
+    "candidate_weights_sha256": "2afd4cf10a28b274445073c6fc3c880c54708d5886ca3a2c54ed45857a94e2ea",
+    "matches_frozen_candidate": true,
+    "staged_dispute_service_loader_rc": 0,
+    "staged_dispute_service_loaded_path": "/private/var/folders/7y/2lqt2mz55c51r0lpvdlqsz680000gn/T/proofledger_staging_q5he0d5o/ai/artifacts/candidates/deberta_v3_inr_v1/best"
+  },
+  "online_server": {
+    "health": {
+      "code": 200,
+      "body": {
+        "status": "HEALTHY",
+        "timestamp": 1794394558.515093,
+        "ledger_valid": true,
+        "total_events": 0
+      }
+    },
+    "ai_status": {
+      "code": 200,
+      "body": {
+        "status": "ONLINE",
+        "model_name": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+        "model_path": "ai/artifacts/candidates/deberta_v3_inr_v1/best",
+        "loaded_model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+        "model_load_error": null,
+        "weights_file": "model.safetensors",
+        "weights_size_mb": 703.55,
+        "is_loaded": true,
+        "device": "mps",
+        "supported_labels": [
+          "SUPPORTED",
+          "CONTRADICTED",
+          "INSUFFICIENT_EVIDENCE"
+        ],
+        "architecture": "deberta-v2",
+        "fine_tuning": "Dispute Resolution NLI (Advisory Semantic Alignment)"
+      }
+    },
+    "system_status": {
+      "code": 200,
+      "ai_component": {
+        "status": "MODEL_LOADED",
+        "model_name": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+        "checkpoint_path": "ai/artifacts/candidates/deberta_v3_inr_v1/best",
+        "loaded_model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+        "model_load_error": null,
+        "weights_file": "model.safetensors",
+        "weights_size_mb": 703.55,
+        "is_loaded": true,
+        "device": "mps",
+        "diagnostic_inference_ms": 230.46,
+        "diagnostic_prediction": "SUPPORTED",
+        "supported_labels": [
+          "SUPPORTED",
+          "CONTRADICTED",
+          "INSUFFICIENT_EVIDENCE"
+        ]
+      }
+    },
+    "seller_register_code": 200,
+    "verify_claims": {
+      "code": 200,
+      "ai_engine": {
+        "model_name": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+        "checkpoint": "ai/artifacts/candidates/deberta_v3_inr_v1/best",
+        "weights_file": "model.safetensors",
+        "device": "mps",
+        "invocation_status": "INVOKED_MPS",
+        "status": "ONLINE"
+      },
+      "claims_out": [
+        {
+          "claim_id": "CLM-SUP",
+          "verdict": "SUPPORTED",
+          "verdict_engine": "FINE_TUNED_DEBERTA_V3",
+          "det_triggered": false,
+          "ai_label": "SUPPORTED"
+        },
+        {
+          "claim_id": "CLM-CON",
+          "verdict": "CONTRADICTED",
+          "verdict_engine": "FINE_TUNED_DEBERTA_V3",
+          "det_triggered": false,
+          "ai_label": "CONTRADICTED"
+        },
+        {
+          "claim_id": "CLM-INS",
+          "verdict": "INSUFFICIENT_EVIDENCE",
+          "verdict_engine": "FINE_TUNED_DEBERTA_V3",
+          "det_triggered": false,
+          "ai_label": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "claim_id": "CLM-DWN",
+          "verdict": "INSUFFICIENT_EVIDENCE",
+          "verdict_engine": "DETERMINISTIC_SAFETY_RULE",
+          "det_triggered": true,
+          "ai_label": "SUPPORTED"
+        }
+      ]
+    },
+    "linkage_override_test": {
+      "code": 200,
+      "claim": {
+        "claim_id": "CLM-LINK",
+        "claim_text": "Package for Order ORD-TARGET-9999 was delivered to buyer.",
+        "verdict": "INSUFFICIENT_EVIDENCE",
+        "verdict_engine": "DETERMINISTIC_SAFETY_RULE",
+        "is_abstained": false,
+        "model_abstained": false,
+        "final_decision_deferred": false,
+        "deterministic_rule_triggered": true,
+        "semantic_inference_performed": false,
+        "explanation": "Transaction mismatch: the provided fulfillment records do not match this order ID.",
+        "excluded_from_response": true,
+        "seller_decision": "EXCLUDED",
+        "supporting_sources": [],
+        "contradicting_sources": [],
+        "missing_evidence": [
+          "Evidence records belong to an unrelated transaction reference. Linkage check failed."
+        ],
+        "rule_vs_model_disagreement": true,
+        "disagreement_detail": "Rule suggested 'INSUFFICIENT_EVIDENCE' but fine-tuned DeBERTa predicted 'SUPPORTED' (Model score: 0.97).",
+        "deterministic_rule_verdict": "INSUFFICIENT_EVIDENCE",
+        "deterministic_checks": [
+          {
+            "check": "no_conflicting_delivery",
+            "passed": true,
+            "message": "No conflicting delivery events."
+          },
+          {
+            "check": "event_order",
+            "passed": true,
+            "message": "No impossible event ordering detected."
+          },
+          {
+            "check": "evidence_present",
+            "passed": true,
+            "message": "1 record(s) provided."
+          },
+          {
+            "check": "order_id_consistent",
+            "passed": false,
+            "message": "Order ID 'ORD-TARGET-9999' not found in any evidence record."
+          },
+          {
+            "check": "source_mismatch_detected",
+            "passed": true,
+            "message": "Evidence linkage failure: records belong to ['ORD_UNRELATED_1111'], not claimed order ORD-TARGET-9999."
+          }
+        ],
+        "ai_model": {
+          "label": "SUPPORTED",
+          "model_score": 0.9187,
+          "raw_confidence": 0.971,
+          "calibrated_confidence": 0.9187,
+          "calibrated_probability": 0.9187,
+          "model_probability": 0.9187,
+          "confidence": 0.9187,
+          "calibration_status": "TEMPERATURE_SCALED_VAL_T1_36",
+          "temperature_applied": 1.36,
+          "scores": {
+            "SUPPORTED": 0.971,
+            "CONTRADICTED": 0.0218,
+            "INSUFFICIENT_EVIDENCE": 0.0072
+          },
+          "raw_scores": {
+            "SUPPORTED": 0.971,
+            "CONTRADICTED": 0.0218,
+            "INSUFFICIENT_EVIDENCE": 0.0072
+          },
+          "calibrated_scores": {
+            "SUPPORTED": 0.9187,
+            "CONTRADICTED": 0.0564,
+            "INSUFFICIENT_EVIDENCE": 0.025
+          },
+          "raw_logits": [
+            2.9389,
+            -0.8565,
+            -1.9647
+          ],
+          "is_abstained": false,
+          "abstention_reason": null,
+          "decision": "SUPPORTED",
+          "margin": 0.9492,
+          "device": "mps",
+          "model_name": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+          "invocation_status": "INVOKED",
+          "inference_time_ms": 63.15,
+          "verdict_engine": "DETERMINISTIC_SAFETY_RULE"
+        },
+        "evaluated_at": "2026-11-11T10:56:02.039299+00:00"
+      }
+    },
+    "analyze_stream": {
+      "code": 200,
+      "n_events": 11,
+      "stage_keys": [
+        "retrieve_dispute",
+        "read_requested_evidence",
+        "link_payment_order",
+        "validate_amount_currency",
+        "validate_tracking",
+        "check_delivery_evidence",
+        "semantic_nli",
+        "identify_gaps",
+        "prepare_grounded_response",
+        "ready_for_review"
+      ],
+      "final_event_types": [
+        "complete"
+      ]
+    },
+    "approval_gate_without_consent": {
+      "code": 400,
+      "detail": {
+        "detail": "MERCHANT_APPROVAL_REQUIRED: Merchant must review and explicitly approve evidence response before submitting to PayPal."
+      }
+    }
+  },
+  "offline_fail_closed": {
+    "ai_status_code": 200,
+    "ai_status": {
+      "status": "MODEL_UNAVAILABLE",
+      "model_name": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+      "model_path": "/tmp/nonexistent_proofledger_checkpoint_8020",
+      "loaded_model_path": null,
+      "model_load_error": "Checkpoint not found at /tmp/nonexistent_proofledger_checkpoint_8020",
+      "weights_file": "model.safetensors",
+      "weights_size_mb": 0,
+      "is_loaded": false,
+      "device": "offline",
+      "supported_labels": [
+        "SUPPORTED",
+        "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "architecture": null,
+      "fine_tuning": "Dispute Resolution NLI (Advisory Semantic Alignment)"
+    },
+    "test_inference_code": 503,
+    "test_inference_body": {
+      "detail": "AI Neural Model is currently unavailable."
+    }
+  },
+  "frontend_build": {
+    "returncode": 0,
+    "output_tail": "> proofledger-frontend@2.0.0 build\n> vite build\n\nvite v5.4.21 building for production...\ntransforming...\n\u2713 1620 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.89 kB \u2502 gzip:  0.51 kB\ndist/assets/index-802Chpng.css   58.97 kB \u2502 gzip: 10.06 kB\ndist/assets/index-C08I6OZ-.js   367.83 kB \u2502 gzip: 96.00 kB\n\u2713 built in 1.45s"
+  }
+}

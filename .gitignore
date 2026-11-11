@@ -1,0 +1,68 @@
+# Environment & secrets
+.env
+**/.env
+.env.*
+!.env.example
+
+# Databases, runtime ledgers & locks
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+*.lock
+events_hash_chain*.jsonl
+events_hash_chain*.jsonl.manifest.json
+dispute_approvals.jsonl
+
+# Large model weights, checkpoints, raw datasets & archives (>100 MB GitHub limit)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.zip
+ai/artifacts/checkpoints/
+ai/data/raw/
+ai/data/processed/feverous/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Cache
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# macOS & IDE
+.DS_Store
+.idea/
+.vscode/

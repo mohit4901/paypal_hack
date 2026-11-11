@@ -1,0 +1,59 @@
+{
+  "test_suite": "100_unseen_claims_generalization_audit",
+  "model": "DeBERTa-v3-base-mnli-fever-anli (Fine-Tuned)",
+  "device": "mps",
+  "overall_accuracy_percent": 34.0,
+  "per_class_metrics": {
+    "SUPPORTED": {
+      "precision": 0.75,
+      "recall": 0.4,
+      "f1": 0.5217391304347827,
+      "support": 15
+    },
+    "CONTRADICTED": {
+      "precision": 0.627906976744186,
+      "recall": 0.36,
+      "f1": 0.4576271186440678,
+      "support": 75
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "precision": 0.02040816326530612,
+      "recall": 0.1,
+      "f1": 0.033898305084745756,
+      "support": 10
+    }
+  },
+  "confusion_matrix": {
+    "SUPPORTED": {
+      "CONTRADICTED": 7,
+      "SUPPORTED": 6,
+      "INSUFFICIENT_EVIDENCE": 2
+    },
+    "CONTRADICTED": {
+      "INSUFFICIENT_EVIDENCE": 46,
+      "CONTRADICTED": 27,
+      "SUPPORTED": 2
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "CONTRADICTED": 9,
+      "INSUFFICIENT_EVIDENCE": 1,
+      "SUPPORTED": 0
+    }
+  },
+  "latency_ms": {
+    "mean": 48.11,
+    "p50": 32.56,
+    "p95": 96.08,
+    "min": 16.37,
+    "max": 504.93
+  },
+  "category_accuracy": {
+    "Entailment": 40.0,
+    "Negation": 0.0,
+    "Amount Mismatch": 60.0,
+    "Identity Mismatch": 40.0,
+    "Date Mismatch": 80.0,
+    "Conflicting Evidence": 0.0,
+    "Insufficient Evidence": 10.0
+  }
+}

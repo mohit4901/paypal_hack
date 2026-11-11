@@ -1,0 +1,4992 @@
+{
+  "adversarial_dataset": "ai/data/evaluation/proofledger_unseen_v1/adversarial_challenge.jsonl",
+  "n_adversarial": 72,
+  "summaries": {
+    "A_candidate": {
+      "n": 72,
+      "correct": 62,
+      "accuracy": 0.8611,
+      "insuf_to_con_rate": 0.1429,
+      "overall_fcr": 0.0784,
+      "abstained_count": 2,
+      "per_family": {
+        "compound_hypotheses": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "conflicting_dates": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "emotional_noise": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "long_irrelevant_context": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "lowercase_informal": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "misleading_relevant": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 0
+        },
+        "missing_fields": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "negation_double_neg": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 2
+        },
+        "partial_evidence": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "reordered_evidence": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "shortcut_trap": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "typos": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        }
+      }
+    },
+    "B_pretrained": {
+      "n": 72,
+      "correct": 48,
+      "accuracy": 0.6667,
+      "insuf_to_con_rate": 0.5357,
+      "overall_fcr": 0.2941,
+      "abstained_count": 1,
+      "per_family": {
+        "compound_hypotheses": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 2
+        },
+        "conflicting_dates": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "emotional_noise": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "long_irrelevant_context": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "lowercase_informal": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        },
+        "misleading_relevant": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        },
+        "missing_fields": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "negation_double_neg": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 2
+        },
+        "partial_evidence": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "reordered_evidence": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "shortcut_trap": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 3
+        },
+        "typos": {
+          "n": 6,
+          "correct": 1,
+          "accuracy": 0.1667,
+          "false_contradictions": 2
+        }
+      }
+    },
+    "C_legacy": {
+      "n": 72,
+      "correct": 40,
+      "accuracy": 0.5556,
+      "insuf_to_con_rate": 0.3929,
+      "overall_fcr": 0.2941,
+      "abstained_count": 4,
+      "per_family": {
+        "compound_hypotheses": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "conflicting_dates": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "emotional_noise": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 1
+        },
+        "long_irrelevant_context": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "lowercase_informal": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        },
+        "misleading_relevant": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 2
+        },
+        "missing_fields": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 3
+        },
+        "negation_double_neg": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 1
+        },
+        "partial_evidence": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 1
+        },
+        "reordered_evidence": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 2
+        },
+        "shortcut_trap": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        },
+        "typos": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 2
+        }
+      }
+    },
+    "D_rules_only": {
+      "n": 72,
+      "correct": 29,
+      "accuracy": 0.4028,
+      "insuf_to_con_rate": 0.0,
+      "overall_fcr": 0.0,
+      "abstained_count": 0,
+      "per_family": {
+        "compound_hypotheses": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "conflicting_dates": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "emotional_noise": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "long_irrelevant_context": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 0
+        },
+        "lowercase_informal": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "misleading_relevant": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "missing_fields": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 0
+        },
+        "negation_double_neg": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "partial_evidence": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "reordered_evidence": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        },
+        "shortcut_trap": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 0
+        },
+        "typos": {
+          "n": 6,
+          "correct": 2,
+          "accuracy": 0.3333,
+          "false_contradictions": 0
+        }
+      }
+    },
+    "E_hybrid": {
+      "n": 72,
+      "correct": 61,
+      "accuracy": 0.8472,
+      "insuf_to_con_rate": 0.1429,
+      "overall_fcr": 0.0784,
+      "abstained_count": 2,
+      "per_family": {
+        "compound_hypotheses": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "conflicting_dates": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "false_contradictions": 0
+        },
+        "emotional_noise": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 1
+        },
+        "long_irrelevant_context": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "lowercase_informal": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "misleading_relevant": {
+          "n": 6,
+          "correct": 5,
+          "accuracy": 0.8333,
+          "false_contradictions": 0
+        },
+        "missing_fields": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "negation_double_neg": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 2
+        },
+        "partial_evidence": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "reordered_evidence": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 0
+        },
+        "shortcut_trap": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0,
+          "false_contradictions": 0
+        },
+        "typos": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
+          "false_contradictions": 1
+        }
+      }
+    }
+  },
+  "candidate_failures": [
+    {
+      "sample_id": "ADV1-002-412c70d8",
+      "family": "typos",
+      "gold": "CONTRADICTED",
+      "pred": "INSUFFICIENT_EVIDENCE",
+      "conf": 0.9952,
+      "claim": "The parcel was successfully delivered to the buyer.",
+      "evidence": "FedEx log shows parcl 88412 returend to sendr dock un-delvered."
+    },
+    {
+      "sample_id": "ADV1-003-3578a929",
+      "family": "typos",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "pred": "CONTRADICTED",
+      "conf": 0.8313,
+      "claim": "The carrier picked up the shipment.",
+      "evidence": "Warehose printed lable 771290 but no carrierr pickup scan exsts."
+    },
+    {
+      "sample_id": "ADV1-018-bdce2da1",
+      "family": "emotional_noise",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "pred": "CONTRADICTED",
+      "conf": 0.944,
+      "claim": "Buyer logged 10 hours on the coaching portal.",
+      "evidence": "Merchant insists buyer is dishonest, attaching only a blank order summary PDF."
+    },
+    {
+      "sample_id": "ADV1-026-c2b3c401",
+      "family": "reordered_evidence",
+      "gold": "CONTRADICTED",
+      "pred": "INSUFFICIENT_EVIDENCE",
+      "conf": 0.9938,
+      "claim": "Parcel 55102 was delivered to Seattle WA.",
+      "evidence": "Destination in scan: Miami FL 33101. Expected buyer city: Seattle WA 98101. Parcel: 55102."
+    },
+    {
+      "sample_id": "ADV1-029-d0fb303e",
+      "family": "reordered_evidence",
+      "gold": "CONTRADICTED",
+      "pred": "INSUFFICIENT_EVIDENCE",
+      "conf": 0.9652,
+      "claim": "120.00 USD was settled to merchant account.",
+      "evidence": "Status: VOIDED. Capture attempt: NONE. Order total: 120.00 USD."
+    },
+    {
+      "sample_id": "ADV1-038-e2cbb11f",
+      "family": "conflicting_dates",
+      "gold": "CONTRADICTED",
+      "pred": "SUPPORTED",
+      "conf": 0.9442,
+      "claim": "Delivery scan occurred after the 2026-09-01 purchase.",
+      "evidence": "Carrier delivered parcel on 2026-08-10, whereas buyer placed order on 2026-09-01."
+    },
+    {
+      "sample_id": "ADV1-041-641368a1",
+      "family": "conflicting_dates",
+      "gold": "CONTRADICTED",
+      "pred": "INSUFFICIENT_EVIDENCE",
+      "conf": 0.9774,
+      "claim": "Tracking archive proves fulfillment of the 2026 invoice.",
+      "evidence": "Invoice generated in 2026; tracking archive cited by seller is dated 2023."
+    },
+    {
+      "sample_id": "ADV1-051-0d3f84d4",
+      "family": "negation_double_neg",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "pred": "CONTRADICTED",
+      "conf": 0.5055,
+      "claim": "Buyer opened and accepted the parcel.",
+      "evidence": "Log shows no confirmation that buyer did not open the parcel, nor any delivery receipt."
+    },
+    {
+      "sample_id": "ADV1-054-4c8c9961",
+      "family": "negation_double_neg",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "pred": "CONTRADICTED",
+      "conf": 0.6896,
+      "claim": "Carrier scan confirms doorstep drop-off.",
+      "evidence": "Seller states tracking is not unavailable, though no carrier scan appears in evidence."
+    },
+    {
+      "sample_id": "ADV1-068-bd298229",
+      "family": "misleading_relevant",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "pred": "SUPPORTED",
+      "conf": 0.5083,
+      "claim": "Buyer received working unit at their home address.",
+      "evidence": "Merchant attached signed warehouse QA checklist confirming product passed power-on test before boxing."
+    }
+  ],
+  "counterfactual_probes": [
+    {
+      "probe_id": "CF-LEX-DOC-01",
+      "category": "lexical_shortcut_neutral_cue",
+      "description": "Adding neutral metadata mentioning 'document' and 'record' without proving delivery",
+      "expected_base": "INSUFFICIENT_EVIDENCE",
+      "expected_perturbed": "INSUFFICIENT_EVIDENCE",
+      "candidate_base": "INSUFFICIENT_EVIDENCE",
+      "candidate_base_conf": 0.9759,
+      "candidate_perturbed": "INSUFFICIENT_EVIDENCE",
+      "candidate_perturbed_conf": 0.9737,
+      "candidate_passed_both": true,
+      "pretrained_base": "CONTRADICTED",
+      "pretrained_perturbed": "INSUFFICIENT_EVIDENCE",
+      "pretrained_passed_both": false
+    },
+    {
+      "probe_id": "CF-LEX-DELIV-02",
+      "category": "lexical_shortcut_delivered_negation",
+      "description": "Contains word 'delivered' inside negated/undelivered status",
+      "expected_base": "INSUFFICIENT_EVIDENCE",
+      "expected_perturbed": "CONTRADICTED",
+      "candidate_base": "INSUFFICIENT_EVIDENCE",
+      "candidate_base_conf": 0.7942,
+      "candidate_perturbed": "CONTRADICTED",
+      "candidate_perturbed_conf": 0.9936,
+      "candidate_passed_both": true,
+      "pretrained_base": "CONTRADICTED",
+      "pretrained_perturbed": "CONTRADICTED",
+      "pretrained_passed_both": false
+    },
+    {
+      "probe_id": "CF-LEX-CANCEL-03",
+      "category": "lexical_shortcut_benign_cancelled",
+      "description": "Word 'cancelled' refers to fee/insurance rather than shipment",
+      "expected_base": "SUPPORTED",
+      "expected_perturbed": "SUPPORTED",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.9967,
+      "candidate_perturbed": "SUPPORTED",
+      "candidate_perturbed_conf": 0.9966,
+      "candidate_passed_both": true,
+      "pretrained_base": "SUPPORTED",
+      "pretrained_perturbed": "SUPPORTED",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-LEX-CONF-04",
+      "category": "lexical_shortcut_confirmed_scope",
+      "description": "Email confirmed order placement/invoice, NOT carrier delivery",
+      "expected_base": "INSUFFICIENT_EVIDENCE",
+      "expected_perturbed": "INSUFFICIENT_EVIDENCE",
+      "candidate_base": "INSUFFICIENT_EVIDENCE",
+      "candidate_base_conf": 0.6032,
+      "candidate_perturbed": "INSUFFICIENT_EVIDENCE",
+      "candidate_perturbed_conf": 0.9783,
+      "candidate_passed_both": true,
+      "pretrained_base": "INSUFFICIENT_EVIDENCE",
+      "pretrained_perturbed": "INSUFFICIENT_EVIDENCE",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-FMT-PROSE-05A",
+      "category": "format_invariance_supported",
+      "description": "Same delivery proof in plain prose vs JSON object",
+      "expected_base": "SUPPORTED",
+      "expected_perturbed": "SUPPORTED",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.9912,
+      "candidate_perturbed": "SUPPORTED",
+      "candidate_perturbed_conf": 0.9444,
+      "candidate_passed_both": true,
+      "pretrained_base": "SUPPORTED",
+      "pretrained_perturbed": "SUPPORTED",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-FMT-TABLE-05B",
+      "category": "format_invariance_contradicted",
+      "description": "Same refund contradiction in prose vs pipe-delimited ledger row",
+      "expected_base": "CONTRADICTED",
+      "expected_perturbed": "CONTRADICTED",
+      "candidate_base": "CONTRADICTED",
+      "candidate_base_conf": 0.9986,
+      "candidate_perturbed": "CONTRADICTED",
+      "candidate_perturbed_conf": 0.9932,
+      "candidate_passed_both": true,
+      "pretrained_base": "CONTRADICTED",
+      "pretrained_perturbed": "CONTRADICTED",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-NUM-AMT-06",
+      "category": "minimal_numeric_flip",
+      "description": "Exact amount 149.00 USD vs mismatched 49.00 USD",
+      "expected_base": "SUPPORTED",
+      "expected_perturbed": "CONTRADICTED",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.9888,
+      "candidate_perturbed": "CONTRADICTED",
+      "candidate_perturbed_conf": 0.9916,
+      "candidate_passed_both": true,
+      "pretrained_base": "SUPPORTED",
+      "pretrained_perturbed": "CONTRADICTED",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-NUM-CCY-07",
+      "category": "minimal_currency_flip",
+      "description": "Currency USD vs GBP with identical digits",
+      "expected_base": "SUPPORTED",
+      "expected_perturbed": "CONTRADICTED",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.9847,
+      "candidate_perturbed": "CONTRADICTED",
+      "candidate_perturbed_conf": 0.9208,
+      "candidate_passed_both": true,
+      "pretrained_base": "INSUFFICIENT_EVIDENCE",
+      "pretrained_perturbed": "CONTRADICTED",
+      "pretrained_passed_both": false
+    },
+    {
+      "probe_id": "CF-ENT-ADDR-08",
+      "category": "minimal_entity_swap",
+      "description": "Delivered to Seattle vs Delivered to Denver",
+      "expected_base": "SUPPORTED",
+      "expected_perturbed": "CONTRADICTED",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.9956,
+      "candidate_perturbed": "CONTRADICTED",
+      "candidate_perturbed_conf": 0.91,
+      "candidate_passed_both": true,
+      "pretrained_base": "SUPPORTED",
+      "pretrained_perturbed": "CONTRADICTED",
+      "pretrained_passed_both": true
+    },
+    {
+      "probe_id": "CF-NOISE-09",
+      "category": "irrelevant_distractor_noise",
+      "description": "Appending irrelevant policy boilerplate to insufficient tracking stub",
+      "expected_base": "INSUFFICIENT_EVIDENCE",
+      "expected_perturbed": "INSUFFICIENT_EVIDENCE",
+      "candidate_base": "SUPPORTED",
+      "candidate_base_conf": 0.6942,
+      "candidate_perturbed": "SUPPORTED",
+      "candidate_perturbed_conf": 0.544,
+      "candidate_passed_both": false,
+      "pretrained_base": "INSUFFICIENT_EVIDENCE",
+      "pretrained_perturbed": "INSUFFICIENT_EVIDENCE",
+      "pretrained_passed_both": true
+    }
+  ],
+  "raw_predictions": {
+    "A_candidate": [
+      {
+        "sample_id": "ADV1-001-0d4639f9",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.996,
+        "scores": {
+          "SUPPORTED": 0.996,
+          "CONTRADICTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0038
+        }
+      },
+      {
+        "sample_id": "ADV1-002-412c70d8",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9952,
+        "scores": {
+          "SUPPORTED": 0.0036,
+          "CONTRADICTED": 0.0012,
+          "INSUFFICIENT_EVIDENCE": 0.9952
+        }
+      },
+      {
+        "sample_id": "ADV1-003-3578a929",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.8313,
+        "scores": {
+          "SUPPORTED": 0.0032,
+          "CONTRADICTED": 0.8313,
+          "INSUFFICIENT_EVIDENCE": 0.1654
+        }
+      },
+      {
+        "sample_id": "ADV1-004-a80b4626",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.6972,
+        "scores": {
+          "SUPPORTED": 0.6972,
+          "CONTRADICTED": 0.0009,
+          "INSUFFICIENT_EVIDENCE": 0.302
+        }
+      },
+      {
+        "sample_id": "ADV1-005-e7c3adc7",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9989,
+        "scores": {
+          "SUPPORTED": 0.0003,
+          "CONTRADICTED": 0.9989,
+          "INSUFFICIENT_EVIDENCE": 0.0008
+        }
+      },
+      {
+        "sample_id": "ADV1-006-be08947e",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9572,
+        "scores": {
+          "SUPPORTED": 0.0035,
+          "CONTRADICTED": 0.0394,
+          "INSUFFICIENT_EVIDENCE": 0.9572
+        }
+      },
+      {
+        "sample_id": "ADV1-007-bdfdf15b",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9959,
+        "scores": {
+          "SUPPORTED": 0.9959,
+          "CONTRADICTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.0038
+        }
+      },
+      {
+        "sample_id": "ADV1-008-b82bf390",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9525,
+        "scores": {
+          "SUPPORTED": 0.0173,
+          "CONTRADICTED": 0.9525,
+          "INSUFFICIENT_EVIDENCE": 0.0302
+        }
+      },
+      {
+        "sample_id": "ADV1-009-05d9cb24",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9964,
+        "scores": {
+          "SUPPORTED": 0.0024,
+          "CONTRADICTED": 0.0012,
+          "INSUFFICIENT_EVIDENCE": 0.9964
+        }
+      },
+      {
+        "sample_id": "ADV1-010-9f04cb07",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.7301,
+        "scores": {
+          "SUPPORTED": 0.7301,
+          "CONTRADICTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.2693
+        }
+      },
+      {
+        "sample_id": "ADV1-011-42f74e4f",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9989,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "CONTRADICTED": 0.9989,
+          "INSUFFICIENT_EVIDENCE": 0.001
+        }
+      },
+      {
+        "sample_id": "ADV1-012-2cd07646",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8997,
+        "scores": {
+          "SUPPORTED": 0.013,
+          "CONTRADICTED": 0.0873,
+          "INSUFFICIENT_EVIDENCE": 0.8997
+        }
+      },
+      {
+        "sample_id": "ADV1-013-54f95f4f",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9892,
+        "scores": {
+          "SUPPORTED": 0.9892,
+          "CONTRADICTED": 0.0008,
+          "INSUFFICIENT_EVIDENCE": 0.01
+        }
+      },
+      {
+        "sample_id": "ADV1-014-15a20f79",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9522,
+        "scores": {
+          "SUPPORTED": 0.0011,
+          "CONTRADICTED": 0.9522,
+          "INSUFFICIENT_EVIDENCE": 0.0467
+        }
+      },
+      {
+        "sample_id": "ADV1-015-5fc939ef",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7839,
+        "scores": {
+          "SUPPORTED": 0.0237,
+          "CONTRADICTED": 0.1924,
+          "INSUFFICIENT_EVIDENCE": 0.7839
+        }
+      },
+      {
+        "sample_id": "ADV1-016-c54aa440",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.99,
+        "scores": {
+          "SUPPORTED": 0.99,
+          "CONTRADICTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.0094
+        }
+      },
+      {
+        "sample_id": "ADV1-017-77e12186",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9995,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "CONTRADICTED": 0.9995,
+          "INSUFFICIENT_EVIDENCE": 0.0004
+        }
+      },
+      {
+        "sample_id": "ADV1-018-bdce2da1",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.944,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "CONTRADICTED": 0.944,
+          "INSUFFICIENT_EVIDENCE": 0.0554
+        }
+      },
+      {
+        "sample_id": "ADV1-019-c33fb2eb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9906,
+        "scores": {
+          "SUPPORTED": 0.9906,
+          "CONTRADICTED": 0.0005,
+          "INSUFFICIENT_EVIDENCE": 0.009
+        }
+      },
+      {
+        "sample_id": "ADV1-020-e94ab81a",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9982,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "CONTRADICTED": 0.9982,
+          "INSUFFICIENT_EVIDENCE": 0.0017
+        }
+      },
+      {
+        "sample_id": "ADV1-021-8012cd61",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9502,
+        "scores": {
+          "SUPPORTED": 0.0388,
+          "CONTRADICTED": 0.0111,
+          "INSUFFICIENT_EVIDENCE": 0.9502
+        }
+      },
+      {
+        "sample_id": "ADV1-022-ca84a9bb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.998,
+        "scores": {
+          "SUPPORTED": 0.998,
+          "CONTRADICTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.0017
+        }
+      },
+      {
+        "sample_id": "ADV1-023-0b65aec2",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9125,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "CONTRADICTED": 0.9125,
+          "INSUFFICIENT_EVIDENCE": 0.0869
+        }
+      },
+      {
+        "sample_id": "ADV1-024-acf0beff",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9918,
+        "scores": {
+          "SUPPORTED": 0.0043,
+          "CONTRADICTED": 0.0039,
+          "INSUFFICIENT_EVIDENCE": 0.9918
+        }
+      },
+      {
+        "sample_id": "ADV1-025-7be66e62",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.8448,
+        "scores": {
+          "SUPPORTED": 0.8448,
+          "CONTRADICTED": 0.0079,
+          "INSUFFICIENT_EVIDENCE": 0.1473
+        }
+      },
+      {
+        "sample_id": "ADV1-026-c2b3c401",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9938,
+        "scores": {
+          "SUPPORTED": 0.0041,
+          "CONTRADICTED": 0.0021,
+          "INSUFFICIENT_EVIDENCE": 0.9938
+        }
+      },
+      {
+        "sample_id": "ADV1-027-5a8046fc",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9976,
+        "scores": {
+          "SUPPORTED": 0.0018,
+          "CONTRADICTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.9976
+        }
+      },
+      {
+        "sample_id": "ADV1-028-d8c7abbf",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9826,
+        "scores": {
+          "SUPPORTED": 0.9826,
+          "CONTRADICTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.017
+        }
+      },
+      {
+        "sample_id": "ADV1-029-d0fb303e",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9652,
+        "scores": {
+          "SUPPORTED": 0.0303,
+          "CONTRADICTED": 0.0044,
+          "INSUFFICIENT_EVIDENCE": 0.9652
+        }
+      },
+      {
+        "sample_id": "ADV1-030-da32d449",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9878,
+        "scores": {
+          "SUPPORTED": 0.0111,
+          "CONTRADICTED": 0.001,
+          "INSUFFICIENT_EVIDENCE": 0.9878
+        }
+      },
+      {
+        "sample_id": "ADV1-031-07030ba9",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9972,
+        "scores": {
+          "SUPPORTED": 0.9972,
+          "CONTRADICTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.0025
+        }
+      },
+      {
+        "sample_id": "ADV1-032-4d87e3ac",
+        "scenario_family": "missing_fields",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.998,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "CONTRADICTED": 0.998,
+          "INSUFFICIENT_EVIDENCE": 0.0014
+        }
+      },
+      {
+        "sample_id": "ADV1-033-3cc9e832",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9692,
+        "scores": {
+          "SUPPORTED": 0.0292,
+          "CONTRADICTED": 0.0016,
+          "INSUFFICIENT_EVIDENCE": 0.9692
+        }
+      },
+      {
+        "sample_id": "ADV1-034-3961e703",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9875,
+        "scores": {
+          "SUPPORTED": 0.004,
+          "CONTRADICTED": 0.0085,
+          "INSUFFICIENT_EVIDENCE": 0.9875
+        }
+      },
+      {
+        "sample_id": "ADV1-035-f1e3f971",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7006,
+        "scores": {
+          "SUPPORTED": 0.0047,
+          "CONTRADICTED": 0.2948,
+          "INSUFFICIENT_EVIDENCE": 0.7006
+        }
+      },
+      {
+        "sample_id": "ADV1-036-b8c48760",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9905,
+        "scores": {
+          "SUPPORTED": 0.9905,
+          "CONTRADICTED": 0.0008,
+          "INSUFFICIENT_EVIDENCE": 0.0087
+        }
+      },
+      {
+        "sample_id": "ADV1-037-793b2a05",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9966,
+        "scores": {
+          "SUPPORTED": 0.9966,
+          "CONTRADICTED": 0.0024,
+          "INSUFFICIENT_EVIDENCE": 0.001
+        }
+      },
+      {
+        "sample_id": "ADV1-038-e2cbb11f",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9442,
+        "scores": {
+          "SUPPORTED": 0.9442,
+          "CONTRADICTED": 0.0267,
+          "INSUFFICIENT_EVIDENCE": 0.0291
+        }
+      },
+      {
+        "sample_id": "ADV1-039-3df369ca",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9949,
+        "scores": {
+          "SUPPORTED": 0.0028,
+          "CONTRADICTED": 0.0023,
+          "INSUFFICIENT_EVIDENCE": 0.9949
+        }
+      },
+      {
+        "sample_id": "ADV1-040-cc2e1ec4",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9875,
+        "scores": {
+          "SUPPORTED": 0.9875,
+          "CONTRADICTED": 0.0025,
+          "INSUFFICIENT_EVIDENCE": 0.01
+        }
+      },
+      {
+        "sample_id": "ADV1-041-641368a1",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9774,
+        "scores": {
+          "SUPPORTED": 0.0208,
+          "CONTRADICTED": 0.0018,
+          "INSUFFICIENT_EVIDENCE": 0.9774
+        }
+      },
+      {
+        "sample_id": "ADV1-042-03b2f7be",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7867,
+        "scores": {
+          "SUPPORTED": 0.1945,
+          "CONTRADICTED": 0.0188,
+          "INSUFFICIENT_EVIDENCE": 0.7867
+        }
+      },
+      {
+        "sample_id": "ADV1-043-6319fb95",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9963,
+        "scores": {
+          "SUPPORTED": 0.9963,
+          "CONTRADICTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.0034
+        }
+      },
+      {
+        "sample_id": "ADV1-044-a18223d4",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9903,
+        "scores": {
+          "SUPPORTED": 0.0007,
+          "CONTRADICTED": 0.9903,
+          "INSUFFICIENT_EVIDENCE": 0.009
+        }
+      },
+      {
+        "sample_id": "ADV1-045-420d1a69",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9713,
+        "scores": {
+          "SUPPORTED": 0.0267,
+          "CONTRADICTED": 0.0019,
+          "INSUFFICIENT_EVIDENCE": 0.9713
+        }
+      },
+      {
+        "sample_id": "ADV1-046-e870ba40",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9992,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "CONTRADICTED": 0.9992,
+          "INSUFFICIENT_EVIDENCE": 0.0007
+        }
+      },
+      {
+        "sample_id": "ADV1-047-9eace0f3",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9794,
+        "scores": {
+          "SUPPORTED": 0.001,
+          "CONTRADICTED": 0.0196,
+          "INSUFFICIENT_EVIDENCE": 0.9794
+        }
+      },
+      {
+        "sample_id": "ADV1-048-b2bacd26",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9966,
+        "scores": {
+          "SUPPORTED": 0.9966,
+          "CONTRADICTED": 0.0005,
+          "INSUFFICIENT_EVIDENCE": 0.0029
+        }
+      },
+      {
+        "sample_id": "ADV1-049-9cdedca8",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9626,
+        "scores": {
+          "SUPPORTED": 0.9626,
+          "CONTRADICTED": 0.0015,
+          "INSUFFICIENT_EVIDENCE": 0.0359
+        }
+      },
+      {
+        "sample_id": "ADV1-050-f20e8739",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9965,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "CONTRADICTED": 0.9965,
+          "INSUFFICIENT_EVIDENCE": 0.0033
+        }
+      },
+      {
+        "sample_id": "ADV1-051-0d3f84d4",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.5055,
+        "scores": {
+          "SUPPORTED": 0.0073,
+          "CONTRADICTED": 0.5055,
+          "INSUFFICIENT_EVIDENCE": 0.4873
+        }
+      },
+      {
+        "sample_id": "ADV1-052-4c6cd154",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9954,
+        "scores": {
+          "SUPPORTED": 0.9954,
+          "CONTRADICTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.0042
+        }
+      },
+      {
+        "sample_id": "ADV1-053-b41aec92",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9967,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "CONTRADICTED": 0.9967,
+          "INSUFFICIENT_EVIDENCE": 0.003
+        }
+      },
+      {
+        "sample_id": "ADV1-054-4c8c9961",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.6896,
+        "scores": {
+          "SUPPORTED": 0.0024,
+          "CONTRADICTED": 0.6896,
+          "INSUFFICIENT_EVIDENCE": 0.308
+        }
+      },
+      {
+        "sample_id": "ADV1-055-a254eb2f",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9966,
+        "scores": {
+          "SUPPORTED": 0.9966,
+          "CONTRADICTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.0031
+        }
+      },
+      {
+        "sample_id": "ADV1-056-ba389370",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9967,
+        "scores": {
+          "SUPPORTED": 0.0007,
+          "CONTRADICTED": 0.9967,
+          "INSUFFICIENT_EVIDENCE": 0.0026
+        }
+      },
+      {
+        "sample_id": "ADV1-057-a21e007b",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9725,
+        "scores": {
+          "SUPPORTED": 0.0042,
+          "CONTRADICTED": 0.0233,
+          "INSUFFICIENT_EVIDENCE": 0.9725
+        }
+      },
+      {
+        "sample_id": "ADV1-058-110d0234",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9923,
+        "scores": {
+          "SUPPORTED": 0.9923,
+          "CONTRADICTED": 0.0008,
+          "INSUFFICIENT_EVIDENCE": 0.0069
+        }
+      },
+      {
+        "sample_id": "ADV1-059-3f62a03d",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9487,
+        "scores": {
+          "SUPPORTED": 0.0007,
+          "CONTRADICTED": 0.9487,
+          "INSUFFICIENT_EVIDENCE": 0.0506
+        }
+      },
+      {
+        "sample_id": "ADV1-060-40b9629c",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7181,
+        "scores": {
+          "SUPPORTED": 0.0055,
+          "CONTRADICTED": 0.2764,
+          "INSUFFICIENT_EVIDENCE": 0.7181
+        }
+      },
+      {
+        "sample_id": "ADV1-061-3dfedbb2",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9331,
+        "scores": {
+          "SUPPORTED": 0.0065,
+          "CONTRADICTED": 0.0604,
+          "INSUFFICIENT_EVIDENCE": 0.9331
+        }
+      },
+      {
+        "sample_id": "ADV1-062-1b9af378",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9952,
+        "scores": {
+          "SUPPORTED": 0.9952,
+          "CONTRADICTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.0044
+        }
+      },
+      {
+        "sample_id": "ADV1-063-97351cb6",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9918,
+        "scores": {
+          "SUPPORTED": 0.9918,
+          "CONTRADICTED": 0.0009,
+          "INSUFFICIENT_EVIDENCE": 0.0073
+        }
+      },
+      {
+        "sample_id": "ADV1-064-cdc74c41",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9625,
+        "scores": {
+          "SUPPORTED": 0.009,
+          "CONTRADICTED": 0.0285,
+          "INSUFFICIENT_EVIDENCE": 0.9625
+        }
+      },
+      {
+        "sample_id": "ADV1-065-2b89a2db",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.997,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "CONTRADICTED": 0.997,
+          "INSUFFICIENT_EVIDENCE": 0.0028
+        }
+      },
+      {
+        "sample_id": "ADV1-066-94ebd12c",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8161,
+        "scores": {
+          "SUPPORTED": 0.0015,
+          "CONTRADICTED": 0.1824,
+          "INSUFFICIENT_EVIDENCE": 0.8161
+        }
+      },
+      {
+        "sample_id": "ADV1-067-34697096",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9975,
+        "scores": {
+          "SUPPORTED": 0.0021,
+          "CONTRADICTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.9975
+        }
+      },
+      {
+        "sample_id": "ADV1-068-bd298229",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.5083,
+        "scores": {
+          "SUPPORTED": 0.5083,
+          "CONTRADICTED": 0.0036,
+          "INSUFFICIENT_EVIDENCE": 0.4881
+        }
+      },
+      {
+        "sample_id": "ADV1-069-dc143b5f",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9321,
+        "scores": {
+          "SUPPORTED": 0.0066,
+          "CONTRADICTED": 0.0613,
+          "INSUFFICIENT_EVIDENCE": 0.9321
+        }
+      },
+      {
+        "sample_id": "ADV1-070-1a0d3750",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9806,
+        "scores": {
+          "SUPPORTED": 0.0166,
+          "CONTRADICTED": 0.0029,
+          "INSUFFICIENT_EVIDENCE": 0.9806
+        }
+      },
+      {
+        "sample_id": "ADV1-071-774f2c2d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.7808,
+        "scores": {
+          "SUPPORTED": 0.7808,
+          "CONTRADICTED": 0.0019,
+          "INSUFFICIENT_EVIDENCE": 0.2173
+        }
+      },
+      {
+        "sample_id": "ADV1-072-9a00ab5d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9849,
+        "scores": {
+          "SUPPORTED": 0.0003,
+          "CONTRADICTED": 0.9849,
+          "INSUFFICIENT_EVIDENCE": 0.0148
+        }
+      }
+    ],
+    "B_pretrained": [
+      {
+        "sample_id": "ADV1-001-0d4639f9",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8605,
+        "scores": {
+          "SUPPORTED": 0.1389,
+          "INSUFFICIENT_EVIDENCE": 0.8605,
+          "CONTRADICTED": 0.0006
+        }
+      },
+      {
+        "sample_id": "ADV1-002-412c70d8",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9871,
+        "scores": {
+          "SUPPORTED": 0.0009,
+          "INSUFFICIENT_EVIDENCE": 0.9871,
+          "CONTRADICTED": 0.0119
+        }
+      },
+      {
+        "sample_id": "ADV1-003-3578a929",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9942,
+        "scores": {
+          "SUPPORTED": 0.0009,
+          "INSUFFICIENT_EVIDENCE": 0.0049,
+          "CONTRADICTED": 0.9942
+        }
+      },
+      {
+        "sample_id": "ADV1-004-a80b4626",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9922,
+        "scores": {
+          "SUPPORTED": 0.0069,
+          "INSUFFICIENT_EVIDENCE": 0.9922,
+          "CONTRADICTED": 0.0008
+        }
+      },
+      {
+        "sample_id": "ADV1-005-e7c3adc7",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9991,
+        "scores": {
+          "SUPPORTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.0006,
+          "CONTRADICTED": 0.9991
+        }
+      },
+      {
+        "sample_id": "ADV1-006-be08947e",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9986,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0013,
+          "CONTRADICTED": 0.9986
+        }
+      },
+      {
+        "sample_id": "ADV1-007-bdfdf15b",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9784,
+        "scores": {
+          "SUPPORTED": 0.9784,
+          "INSUFFICIENT_EVIDENCE": 0.0201,
+          "CONTRADICTED": 0.0016
+        }
+      },
+      {
+        "sample_id": "ADV1-008-b82bf390",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9896,
+        "scores": {
+          "SUPPORTED": 0.0049,
+          "INSUFFICIENT_EVIDENCE": 0.0055,
+          "CONTRADICTED": 0.9896
+        }
+      },
+      {
+        "sample_id": "ADV1-009-05d9cb24",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9929,
+        "scores": {
+          "SUPPORTED": 0.0003,
+          "INSUFFICIENT_EVIDENCE": 0.9929,
+          "CONTRADICTED": 0.0068
+        }
+      },
+      {
+        "sample_id": "ADV1-010-9f04cb07",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8024,
+        "scores": {
+          "SUPPORTED": 0.1961,
+          "INSUFFICIENT_EVIDENCE": 0.8024,
+          "CONTRADICTED": 0.0015
+        }
+      },
+      {
+        "sample_id": "ADV1-011-42f74e4f",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9994,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0006,
+          "CONTRADICTED": 0.9994
+        }
+      },
+      {
+        "sample_id": "ADV1-012-2cd07646",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9702,
+        "scores": {
+          "SUPPORTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.0294,
+          "CONTRADICTED": 0.9702
+        }
+      },
+      {
+        "sample_id": "ADV1-013-54f95f4f",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.973,
+        "scores": {
+          "SUPPORTED": 0.973,
+          "INSUFFICIENT_EVIDENCE": 0.0228,
+          "CONTRADICTED": 0.0042
+        }
+      },
+      {
+        "sample_id": "ADV1-014-15a20f79",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9964,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.0031,
+          "CONTRADICTED": 0.9964
+        }
+      },
+      {
+        "sample_id": "ADV1-015-5fc939ef",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9307,
+        "scores": {
+          "SUPPORTED": 0.0027,
+          "INSUFFICIENT_EVIDENCE": 0.0666,
+          "CONTRADICTED": 0.9307
+        }
+      },
+      {
+        "sample_id": "ADV1-016-c54aa440",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9528,
+        "scores": {
+          "SUPPORTED": 0.9528,
+          "INSUFFICIENT_EVIDENCE": 0.0442,
+          "CONTRADICTED": 0.003
+        }
+      },
+      {
+        "sample_id": "ADV1-017-77e12186",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9997,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0002,
+          "CONTRADICTED": 0.9997
+        }
+      },
+      {
+        "sample_id": "ADV1-018-bdce2da1",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.6319,
+        "scores": {
+          "SUPPORTED": 0.0005,
+          "INSUFFICIENT_EVIDENCE": 0.6319,
+          "CONTRADICTED": 0.3676
+        }
+      },
+      {
+        "sample_id": "ADV1-019-c33fb2eb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9798,
+        "scores": {
+          "SUPPORTED": 0.9798,
+          "INSUFFICIENT_EVIDENCE": 0.0183,
+          "CONTRADICTED": 0.0018
+        }
+      },
+      {
+        "sample_id": "ADV1-020-e94ab81a",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9995,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0004,
+          "CONTRADICTED": 0.9995
+        }
+      },
+      {
+        "sample_id": "ADV1-021-8012cd61",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.928,
+        "scores": {
+          "SUPPORTED": 0.0033,
+          "INSUFFICIENT_EVIDENCE": 0.0687,
+          "CONTRADICTED": 0.928
+        }
+      },
+      {
+        "sample_id": "ADV1-022-ca84a9bb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9932,
+        "scores": {
+          "SUPPORTED": 0.9932,
+          "INSUFFICIENT_EVIDENCE": 0.0061,
+          "CONTRADICTED": 0.0007
+        }
+      },
+      {
+        "sample_id": "ADV1-023-0b65aec2",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9971,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0028,
+          "CONTRADICTED": 0.9971
+        }
+      },
+      {
+        "sample_id": "ADV1-024-acf0beff",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7109,
+        "scores": {
+          "SUPPORTED": 0.0015,
+          "INSUFFICIENT_EVIDENCE": 0.7109,
+          "CONTRADICTED": 0.2876
+        }
+      },
+      {
+        "sample_id": "ADV1-025-7be66e62",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.8883,
+        "scores": {
+          "SUPPORTED": 0.8883,
+          "INSUFFICIENT_EVIDENCE": 0.0792,
+          "CONTRADICTED": 0.0325
+        }
+      },
+      {
+        "sample_id": "ADV1-026-c2b3c401",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9756,
+        "scores": {
+          "SUPPORTED": 0.0061,
+          "INSUFFICIENT_EVIDENCE": 0.9756,
+          "CONTRADICTED": 0.0182
+        }
+      },
+      {
+        "sample_id": "ADV1-027-5a8046fc",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9976,
+        "scores": {
+          "SUPPORTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.9976,
+          "CONTRADICTED": 0.002
+        }
+      },
+      {
+        "sample_id": "ADV1-028-d8c7abbf",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.5115,
+        "scores": {
+          "SUPPORTED": 0.5115,
+          "INSUFFICIENT_EVIDENCE": 0.4686,
+          "CONTRADICTED": 0.0199
+        }
+      },
+      {
+        "sample_id": "ADV1-029-d0fb303e",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9941,
+        "scores": {
+          "SUPPORTED": 0.004,
+          "INSUFFICIENT_EVIDENCE": 0.9941,
+          "CONTRADICTED": 0.002
+        }
+      },
+      {
+        "sample_id": "ADV1-030-da32d449",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9985,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.9985,
+          "CONTRADICTED": 0.0009
+        }
+      },
+      {
+        "sample_id": "ADV1-031-07030ba9",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9916,
+        "scores": {
+          "SUPPORTED": 0.9916,
+          "INSUFFICIENT_EVIDENCE": 0.0072,
+          "CONTRADICTED": 0.0012
+        }
+      },
+      {
+        "sample_id": "ADV1-032-4d87e3ac",
+        "scenario_family": "missing_fields",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9992,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0005,
+          "CONTRADICTED": 0.9992
+        }
+      },
+      {
+        "sample_id": "ADV1-033-3cc9e832",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9935,
+        "scores": {
+          "SUPPORTED": 0.0029,
+          "INSUFFICIENT_EVIDENCE": 0.9935,
+          "CONTRADICTED": 0.0035
+        }
+      },
+      {
+        "sample_id": "ADV1-034-3961e703",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8506,
+        "scores": {
+          "SUPPORTED": 0.0014,
+          "INSUFFICIENT_EVIDENCE": 0.8506,
+          "CONTRADICTED": 0.148
+        }
+      },
+      {
+        "sample_id": "ADV1-035-f1e3f971",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9896,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0101,
+          "CONTRADICTED": 0.9896
+        }
+      },
+      {
+        "sample_id": "ADV1-036-b8c48760",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9835,
+        "scores": {
+          "SUPPORTED": 0.9835,
+          "INSUFFICIENT_EVIDENCE": 0.015,
+          "CONTRADICTED": 0.0015
+        }
+      },
+      {
+        "sample_id": "ADV1-037-793b2a05",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9881,
+        "scores": {
+          "SUPPORTED": 0.9881,
+          "INSUFFICIENT_EVIDENCE": 0.0026,
+          "CONTRADICTED": 0.0093
+        }
+      },
+      {
+        "sample_id": "ADV1-038-e2cbb11f",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.8048,
+        "scores": {
+          "SUPPORTED": 0.8048,
+          "INSUFFICIENT_EVIDENCE": 0.051,
+          "CONTRADICTED": 0.1442
+        }
+      },
+      {
+        "sample_id": "ADV1-039-3df369ca",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9744,
+        "scores": {
+          "SUPPORTED": 0.0012,
+          "INSUFFICIENT_EVIDENCE": 0.9744,
+          "CONTRADICTED": 0.0245
+        }
+      },
+      {
+        "sample_id": "ADV1-040-cc2e1ec4",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9356,
+        "scores": {
+          "SUPPORTED": 0.9356,
+          "INSUFFICIENT_EVIDENCE": 0.0471,
+          "CONTRADICTED": 0.0172
+        }
+      },
+      {
+        "sample_id": "ADV1-041-641368a1",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9889,
+        "scores": {
+          "SUPPORTED": 0.0077,
+          "INSUFFICIENT_EVIDENCE": 0.9889,
+          "CONTRADICTED": 0.0034
+        }
+      },
+      {
+        "sample_id": "ADV1-042-03b2f7be",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7322,
+        "scores": {
+          "SUPPORTED": 0.0543,
+          "INSUFFICIENT_EVIDENCE": 0.7322,
+          "CONTRADICTED": 0.2136
+        }
+      },
+      {
+        "sample_id": "ADV1-043-6319fb95",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9851,
+        "scores": {
+          "SUPPORTED": 0.9851,
+          "INSUFFICIENT_EVIDENCE": 0.0136,
+          "CONTRADICTED": 0.0013
+        }
+      },
+      {
+        "sample_id": "ADV1-044-a18223d4",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9982,
+        "scores": {
+          "SUPPORTED": 0.0005,
+          "INSUFFICIENT_EVIDENCE": 0.0013,
+          "CONTRADICTED": 0.9982
+        }
+      },
+      {
+        "sample_id": "ADV1-045-420d1a69",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7222,
+        "scores": {
+          "SUPPORTED": 0.0015,
+          "INSUFFICIENT_EVIDENCE": 0.7222,
+          "CONTRADICTED": 0.2763
+        }
+      },
+      {
+        "sample_id": "ADV1-046-e870ba40",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9995,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0004,
+          "CONTRADICTED": 0.9995
+        }
+      },
+      {
+        "sample_id": "ADV1-047-9eace0f3",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9854,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0144,
+          "CONTRADICTED": 0.9854
+        }
+      },
+      {
+        "sample_id": "ADV1-048-b2bacd26",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9955,
+        "scores": {
+          "SUPPORTED": 0.9955,
+          "INSUFFICIENT_EVIDENCE": 0.0037,
+          "CONTRADICTED": 0.0007
+        }
+      },
+      {
+        "sample_id": "ADV1-049-9cdedca8",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9422,
+        "scores": {
+          "SUPPORTED": 0.9422,
+          "INSUFFICIENT_EVIDENCE": 0.0525,
+          "CONTRADICTED": 0.0053
+        }
+      },
+      {
+        "sample_id": "ADV1-050-f20e8739",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9989,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.001,
+          "CONTRADICTED": 0.9989
+        }
+      },
+      {
+        "sample_id": "ADV1-051-0d3f84d4",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9839,
+        "scores": {
+          "SUPPORTED": 0.0006,
+          "INSUFFICIENT_EVIDENCE": 0.0155,
+          "CONTRADICTED": 0.9839
+        }
+      },
+      {
+        "sample_id": "ADV1-052-4c6cd154",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9852,
+        "scores": {
+          "SUPPORTED": 0.9852,
+          "INSUFFICIENT_EVIDENCE": 0.0141,
+          "CONTRADICTED": 0.0007
+        }
+      },
+      {
+        "sample_id": "ADV1-053-b41aec92",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9989,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0009,
+          "CONTRADICTED": 0.9989
+        }
+      },
+      {
+        "sample_id": "ADV1-054-4c8c9961",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9893,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0106,
+          "CONTRADICTED": 0.9893
+        }
+      },
+      {
+        "sample_id": "ADV1-055-a254eb2f",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9822,
+        "scores": {
+          "SUPPORTED": 0.9822,
+          "INSUFFICIENT_EVIDENCE": 0.0146,
+          "CONTRADICTED": 0.0032
+        }
+      },
+      {
+        "sample_id": "ADV1-056-ba389370",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9981,
+        "scores": {
+          "SUPPORTED": 0.0007,
+          "INSUFFICIENT_EVIDENCE": 0.0012,
+          "CONTRADICTED": 0.9981
+        }
+      },
+      {
+        "sample_id": "ADV1-057-a21e007b",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.994,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0058,
+          "CONTRADICTED": 0.994
+        }
+      },
+      {
+        "sample_id": "ADV1-058-110d0234",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9811,
+        "scores": {
+          "SUPPORTED": 0.9811,
+          "INSUFFICIENT_EVIDENCE": 0.0146,
+          "CONTRADICTED": 0.0043
+        }
+      },
+      {
+        "sample_id": "ADV1-059-3f62a03d",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9959,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0041,
+          "CONTRADICTED": 0.9959
+        }
+      },
+      {
+        "sample_id": "ADV1-060-40b9629c",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.989,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0108,
+          "CONTRADICTED": 0.989
+        }
+      },
+      {
+        "sample_id": "ADV1-061-3dfedbb2",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.5989,
+        "scores": {
+          "SUPPORTED": 0.0041,
+          "INSUFFICIENT_EVIDENCE": 0.397,
+          "CONTRADICTED": 0.5989
+        }
+      },
+      {
+        "sample_id": "ADV1-062-1b9af378",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9932,
+        "scores": {
+          "SUPPORTED": 0.9932,
+          "INSUFFICIENT_EVIDENCE": 0.0059,
+          "CONTRADICTED": 0.0009
+        }
+      },
+      {
+        "sample_id": "ADV1-063-97351cb6",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9714,
+        "scores": {
+          "SUPPORTED": 0.9714,
+          "INSUFFICIENT_EVIDENCE": 0.0242,
+          "CONTRADICTED": 0.0045
+        }
+      },
+      {
+        "sample_id": "ADV1-064-cdc74c41",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9219,
+        "scores": {
+          "SUPPORTED": 0.0033,
+          "INSUFFICIENT_EVIDENCE": 0.0747,
+          "CONTRADICTED": 0.9219
+        }
+      },
+      {
+        "sample_id": "ADV1-065-2b89a2db",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.999,
+        "scores": {
+          "SUPPORTED": 0.0002,
+          "INSUFFICIENT_EVIDENCE": 0.0008,
+          "CONTRADICTED": 0.999
+        }
+      },
+      {
+        "sample_id": "ADV1-066-94ebd12c",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9987,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0013,
+          "CONTRADICTED": 0.9987
+        }
+      },
+      {
+        "sample_id": "ADV1-067-34697096",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9981,
+        "scores": {
+          "SUPPORTED": 0.0004,
+          "INSUFFICIENT_EVIDENCE": 0.9981,
+          "CONTRADICTED": 0.0015
+        }
+      },
+      {
+        "sample_id": "ADV1-068-bd298229",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.924,
+        "scores": {
+          "SUPPORTED": 0.0024,
+          "INSUFFICIENT_EVIDENCE": 0.924,
+          "CONTRADICTED": 0.0736
+        }
+      },
+      {
+        "sample_id": "ADV1-069-dc143b5f",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9926,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0072,
+          "CONTRADICTED": 0.9926
+        }
+      },
+      {
+        "sample_id": "ADV1-070-1a0d3750",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9618,
+        "scores": {
+          "SUPPORTED": 0.0302,
+          "INSUFFICIENT_EVIDENCE": 0.9618,
+          "CONTRADICTED": 0.008
+        }
+      },
+      {
+        "sample_id": "ADV1-071-774f2c2d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.5895,
+        "scores": {
+          "SUPPORTED": 0.3815,
+          "INSUFFICIENT_EVIDENCE": 0.5895,
+          "CONTRADICTED": 0.029
+        }
+      },
+      {
+        "sample_id": "ADV1-072-9a00ab5d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9987,
+        "scores": {
+          "SUPPORTED": 0.0001,
+          "INSUFFICIENT_EVIDENCE": 0.0011,
+          "CONTRADICTED": 0.9987
+        }
+      }
+    ],
+    "C_legacy": [
+      {
+        "sample_id": "ADV1-001-0d4639f9",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.5233,
+        "scores": {
+          "SUPPORTED": 0.445,
+          "CONTRADICTED": 0.5233,
+          "INSUFFICIENT_EVIDENCE": 0.0317
+        }
+      },
+      {
+        "sample_id": "ADV1-002-412c70d8",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.5869,
+        "scores": {
+          "SUPPORTED": 0.0428,
+          "CONTRADICTED": 0.3703,
+          "INSUFFICIENT_EVIDENCE": 0.5869
+        }
+      },
+      {
+        "sample_id": "ADV1-003-3578a929",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.4988,
+        "scores": {
+          "SUPPORTED": 0.2547,
+          "CONTRADICTED": 0.2466,
+          "INSUFFICIENT_EVIDENCE": 0.4988
+        }
+      },
+      {
+        "sample_id": "ADV1-004-a80b4626",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9575,
+        "scores": {
+          "SUPPORTED": 0.0278,
+          "CONTRADICTED": 0.9575,
+          "INSUFFICIENT_EVIDENCE": 0.0147
+        }
+      },
+      {
+        "sample_id": "ADV1-005-e7c3adc7",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9226,
+        "scores": {
+          "SUPPORTED": 0.0321,
+          "CONTRADICTED": 0.0454,
+          "INSUFFICIENT_EVIDENCE": 0.9226
+        }
+      },
+      {
+        "sample_id": "ADV1-006-be08947e",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8449,
+        "scores": {
+          "SUPPORTED": 0.0305,
+          "CONTRADICTED": 0.1246,
+          "INSUFFICIENT_EVIDENCE": 0.8449
+        }
+      },
+      {
+        "sample_id": "ADV1-007-bdfdf15b",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9218,
+        "scores": {
+          "SUPPORTED": 0.9218,
+          "CONTRADICTED": 0.0573,
+          "INSUFFICIENT_EVIDENCE": 0.0209
+        }
+      },
+      {
+        "sample_id": "ADV1-008-b82bf390",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.8191,
+        "scores": {
+          "SUPPORTED": 0.1166,
+          "CONTRADICTED": 0.8191,
+          "INSUFFICIENT_EVIDENCE": 0.0643
+        }
+      },
+      {
+        "sample_id": "ADV1-009-05d9cb24",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7895,
+        "scores": {
+          "SUPPORTED": 0.0447,
+          "CONTRADICTED": 0.1658,
+          "INSUFFICIENT_EVIDENCE": 0.7895
+        }
+      },
+      {
+        "sample_id": "ADV1-010-9f04cb07",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9444,
+        "scores": {
+          "SUPPORTED": 0.0349,
+          "CONTRADICTED": 0.9444,
+          "INSUFFICIENT_EVIDENCE": 0.0208
+        }
+      },
+      {
+        "sample_id": "ADV1-011-42f74e4f",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9266,
+        "scores": {
+          "SUPPORTED": 0.0288,
+          "CONTRADICTED": 0.0446,
+          "INSUFFICIENT_EVIDENCE": 0.9266
+        }
+      },
+      {
+        "sample_id": "ADV1-012-2cd07646",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9098,
+        "scores": {
+          "SUPPORTED": 0.0274,
+          "CONTRADICTED": 0.0628,
+          "INSUFFICIENT_EVIDENCE": 0.9098
+        }
+      },
+      {
+        "sample_id": "ADV1-013-54f95f4f",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.8871,
+        "scores": {
+          "SUPPORTED": 0.0969,
+          "CONTRADICTED": 0.8871,
+          "INSUFFICIENT_EVIDENCE": 0.016
+        }
+      },
+      {
+        "sample_id": "ADV1-014-15a20f79",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9132,
+        "scores": {
+          "SUPPORTED": 0.0312,
+          "CONTRADICTED": 0.0556,
+          "INSUFFICIENT_EVIDENCE": 0.9132
+        }
+      },
+      {
+        "sample_id": "ADV1-015-5fc939ef",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.516,
+        "scores": {
+          "SUPPORTED": 0.0535,
+          "CONTRADICTED": 0.4305,
+          "INSUFFICIENT_EVIDENCE": 0.516
+        }
+      },
+      {
+        "sample_id": "ADV1-016-c54aa440",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9002,
+        "scores": {
+          "SUPPORTED": 0.9002,
+          "CONTRADICTED": 0.0765,
+          "INSUFFICIENT_EVIDENCE": 0.0233
+        }
+      },
+      {
+        "sample_id": "ADV1-017-77e12186",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9307,
+        "scores": {
+          "SUPPORTED": 0.0249,
+          "CONTRADICTED": 0.0445,
+          "INSUFFICIENT_EVIDENCE": 0.9307
+        }
+      },
+      {
+        "sample_id": "ADV1-018-bdce2da1",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.66,
+        "scores": {
+          "SUPPORTED": 0.0575,
+          "CONTRADICTED": 0.2825,
+          "INSUFFICIENT_EVIDENCE": 0.66
+        }
+      },
+      {
+        "sample_id": "ADV1-019-c33fb2eb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9261,
+        "scores": {
+          "SUPPORTED": 0.9261,
+          "CONTRADICTED": 0.0489,
+          "INSUFFICIENT_EVIDENCE": 0.025
+        }
+      },
+      {
+        "sample_id": "ADV1-020-e94ab81a",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9155,
+        "scores": {
+          "SUPPORTED": 0.0288,
+          "CONTRADICTED": 0.0557,
+          "INSUFFICIENT_EVIDENCE": 0.9155
+        }
+      },
+      {
+        "sample_id": "ADV1-021-8012cd61",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.909,
+        "scores": {
+          "SUPPORTED": 0.0308,
+          "CONTRADICTED": 0.0602,
+          "INSUFFICIENT_EVIDENCE": 0.909
+        }
+      },
+      {
+        "sample_id": "ADV1-022-ca84a9bb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9427,
+        "scores": {
+          "SUPPORTED": 0.9427,
+          "CONTRADICTED": 0.0357,
+          "INSUFFICIENT_EVIDENCE": 0.0215
+        }
+      },
+      {
+        "sample_id": "ADV1-023-0b65aec2",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.5914,
+        "scores": {
+          "SUPPORTED": 0.0464,
+          "CONTRADICTED": 0.3622,
+          "INSUFFICIENT_EVIDENCE": 0.5914
+        }
+      },
+      {
+        "sample_id": "ADV1-024-acf0beff",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.608,
+        "scores": {
+          "SUPPORTED": 0.0513,
+          "CONTRADICTED": 0.3407,
+          "INSUFFICIENT_EVIDENCE": 0.608
+        }
+      },
+      {
+        "sample_id": "ADV1-025-7be66e62",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9341,
+        "scores": {
+          "SUPPORTED": 0.9341,
+          "CONTRADICTED": 0.0426,
+          "INSUFFICIENT_EVIDENCE": 0.0233
+        }
+      },
+      {
+        "sample_id": "ADV1-026-c2b3c401",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.6627,
+        "scores": {
+          "SUPPORTED": 0.076,
+          "CONTRADICTED": 0.6627,
+          "INSUFFICIENT_EVIDENCE": 0.2612
+        }
+      },
+      {
+        "sample_id": "ADV1-027-5a8046fc",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9332,
+        "scores": {
+          "SUPPORTED": 0.0261,
+          "CONTRADICTED": 0.9332,
+          "INSUFFICIENT_EVIDENCE": 0.0407
+        }
+      },
+      {
+        "sample_id": "ADV1-028-d8c7abbf",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7668,
+        "scores": {
+          "SUPPORTED": 0.0628,
+          "CONTRADICTED": 0.1704,
+          "INSUFFICIENT_EVIDENCE": 0.7668
+        }
+      },
+      {
+        "sample_id": "ADV1-029-d0fb303e",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9479,
+        "scores": {
+          "SUPPORTED": 0.0278,
+          "CONTRADICTED": 0.9479,
+          "INSUFFICIENT_EVIDENCE": 0.0243
+        }
+      },
+      {
+        "sample_id": "ADV1-030-da32d449",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9597,
+        "scores": {
+          "SUPPORTED": 0.0207,
+          "CONTRADICTED": 0.9597,
+          "INSUFFICIENT_EVIDENCE": 0.0196
+        }
+      },
+      {
+        "sample_id": "ADV1-031-07030ba9",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9332,
+        "scores": {
+          "SUPPORTED": 0.9332,
+          "CONTRADICTED": 0.0439,
+          "INSUFFICIENT_EVIDENCE": 0.0229
+        }
+      },
+      {
+        "sample_id": "ADV1-032-4d87e3ac",
+        "scenario_family": "missing_fields",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9311,
+        "scores": {
+          "SUPPORTED": 0.0286,
+          "CONTRADICTED": 0.0403,
+          "INSUFFICIENT_EVIDENCE": 0.9311
+        }
+      },
+      {
+        "sample_id": "ADV1-033-3cc9e832",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9635,
+        "scores": {
+          "SUPPORTED": 0.0224,
+          "CONTRADICTED": 0.9635,
+          "INSUFFICIENT_EVIDENCE": 0.0142
+        }
+      },
+      {
+        "sample_id": "ADV1-034-3961e703",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9584,
+        "scores": {
+          "SUPPORTED": 0.0208,
+          "CONTRADICTED": 0.9584,
+          "INSUFFICIENT_EVIDENCE": 0.0208
+        }
+      },
+      {
+        "sample_id": "ADV1-035-f1e3f971",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9384,
+        "scores": {
+          "SUPPORTED": 0.0225,
+          "CONTRADICTED": 0.9384,
+          "INSUFFICIENT_EVIDENCE": 0.0391
+        }
+      },
+      {
+        "sample_id": "ADV1-036-b8c48760",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9419,
+        "scores": {
+          "SUPPORTED": 0.9419,
+          "CONTRADICTED": 0.0376,
+          "INSUFFICIENT_EVIDENCE": 0.0205
+        }
+      },
+      {
+        "sample_id": "ADV1-037-793b2a05",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9124,
+        "scores": {
+          "SUPPORTED": 0.9124,
+          "CONTRADICTED": 0.051,
+          "INSUFFICIENT_EVIDENCE": 0.0367
+        }
+      },
+      {
+        "sample_id": "ADV1-038-e2cbb11f",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9621,
+        "scores": {
+          "SUPPORTED": 0.0216,
+          "CONTRADICTED": 0.9621,
+          "INSUFFICIENT_EVIDENCE": 0.0162
+        }
+      },
+      {
+        "sample_id": "ADV1-039-3df369ca",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9544,
+        "scores": {
+          "SUPPORTED": 0.0213,
+          "CONTRADICTED": 0.9544,
+          "INSUFFICIENT_EVIDENCE": 0.0243
+        }
+      },
+      {
+        "sample_id": "ADV1-040-cc2e1ec4",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9343,
+        "scores": {
+          "SUPPORTED": 0.9343,
+          "CONTRADICTED": 0.0414,
+          "INSUFFICIENT_EVIDENCE": 0.0243
+        }
+      },
+      {
+        "sample_id": "ADV1-041-641368a1",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.9597,
+        "scores": {
+          "SUPPORTED": 0.0253,
+          "CONTRADICTED": 0.9597,
+          "INSUFFICIENT_EVIDENCE": 0.015
+        }
+      },
+      {
+        "sample_id": "ADV1-042-03b2f7be",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.6268,
+        "scores": {
+          "SUPPORTED": 0.0692,
+          "CONTRADICTED": 0.304,
+          "INSUFFICIENT_EVIDENCE": 0.6268
+        }
+      },
+      {
+        "sample_id": "ADV1-043-6319fb95",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9301,
+        "scores": {
+          "SUPPORTED": 0.9301,
+          "CONTRADICTED": 0.0467,
+          "INSUFFICIENT_EVIDENCE": 0.0232
+        }
+      },
+      {
+        "sample_id": "ADV1-044-a18223d4",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9161,
+        "scores": {
+          "SUPPORTED": 0.0299,
+          "CONTRADICTED": 0.054,
+          "INSUFFICIENT_EVIDENCE": 0.9161
+        }
+      },
+      {
+        "sample_id": "ADV1-045-420d1a69",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.8264,
+        "scores": {
+          "SUPPORTED": 0.0394,
+          "CONTRADICTED": 0.8264,
+          "INSUFFICIENT_EVIDENCE": 0.1342
+        }
+      },
+      {
+        "sample_id": "ADV1-046-e870ba40",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9269,
+        "scores": {
+          "SUPPORTED": 0.027,
+          "CONTRADICTED": 0.0461,
+          "INSUFFICIENT_EVIDENCE": 0.9269
+        }
+      },
+      {
+        "sample_id": "ADV1-047-9eace0f3",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8566,
+        "scores": {
+          "SUPPORTED": 0.03,
+          "CONTRADICTED": 0.1134,
+          "INSUFFICIENT_EVIDENCE": 0.8566
+        }
+      },
+      {
+        "sample_id": "ADV1-048-b2bacd26",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9396,
+        "scores": {
+          "SUPPORTED": 0.9396,
+          "CONTRADICTED": 0.0384,
+          "INSUFFICIENT_EVIDENCE": 0.0221
+        }
+      },
+      {
+        "sample_id": "ADV1-049-9cdedca8",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.8856,
+        "scores": {
+          "SUPPORTED": 0.8856,
+          "CONTRADICTED": 0.0884,
+          "INSUFFICIENT_EVIDENCE": 0.0259
+        }
+      },
+      {
+        "sample_id": "ADV1-050-f20e8739",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9187,
+        "scores": {
+          "SUPPORTED": 0.0289,
+          "CONTRADICTED": 0.0523,
+          "INSUFFICIENT_EVIDENCE": 0.9187
+        }
+      },
+      {
+        "sample_id": "ADV1-051-0d3f84d4",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8811,
+        "scores": {
+          "SUPPORTED": 0.0325,
+          "CONTRADICTED": 0.0863,
+          "INSUFFICIENT_EVIDENCE": 0.8811
+        }
+      },
+      {
+        "sample_id": "ADV1-052-4c6cd154",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9339,
+        "scores": {
+          "SUPPORTED": 0.9339,
+          "CONTRADICTED": 0.0479,
+          "INSUFFICIENT_EVIDENCE": 0.0182
+        }
+      },
+      {
+        "sample_id": "ADV1-053-b41aec92",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9133,
+        "scores": {
+          "SUPPORTED": 0.0303,
+          "CONTRADICTED": 0.0564,
+          "INSUFFICIENT_EVIDENCE": 0.9133
+        }
+      },
+      {
+        "sample_id": "ADV1-054-4c8c9961",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.8131,
+        "scores": {
+          "SUPPORTED": 0.0406,
+          "CONTRADICTED": 0.8131,
+          "INSUFFICIENT_EVIDENCE": 0.1464
+        }
+      },
+      {
+        "sample_id": "ADV1-055-a254eb2f",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9311,
+        "scores": {
+          "SUPPORTED": 0.9311,
+          "CONTRADICTED": 0.045,
+          "INSUFFICIENT_EVIDENCE": 0.0239
+        }
+      },
+      {
+        "sample_id": "ADV1-056-ba389370",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.916,
+        "scores": {
+          "SUPPORTED": 0.0308,
+          "CONTRADICTED": 0.0532,
+          "INSUFFICIENT_EVIDENCE": 0.916
+        }
+      },
+      {
+        "sample_id": "ADV1-057-a21e007b",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8928,
+        "scores": {
+          "SUPPORTED": 0.0291,
+          "CONTRADICTED": 0.0782,
+          "INSUFFICIENT_EVIDENCE": 0.8928
+        }
+      },
+      {
+        "sample_id": "ADV1-058-110d0234",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.92,
+        "scores": {
+          "SUPPORTED": 0.92,
+          "CONTRADICTED": 0.0535,
+          "INSUFFICIENT_EVIDENCE": 0.0265
+        }
+      },
+      {
+        "sample_id": "ADV1-059-3f62a03d",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.8975,
+        "scores": {
+          "SUPPORTED": 0.0284,
+          "CONTRADICTED": 0.0742,
+          "INSUFFICIENT_EVIDENCE": 0.8975
+        }
+      },
+      {
+        "sample_id": "ADV1-060-40b9629c",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9075,
+        "scores": {
+          "SUPPORTED": 0.0287,
+          "CONTRADICTED": 0.0638,
+          "INSUFFICIENT_EVIDENCE": 0.9075
+        }
+      },
+      {
+        "sample_id": "ADV1-061-3dfedbb2",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.6378,
+        "scores": {
+          "SUPPORTED": 0.0568,
+          "CONTRADICTED": 0.3054,
+          "INSUFFICIENT_EVIDENCE": 0.6378
+        }
+      },
+      {
+        "sample_id": "ADV1-062-1b9af378",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9369,
+        "scores": {
+          "SUPPORTED": 0.9369,
+          "CONTRADICTED": 0.0399,
+          "INSUFFICIENT_EVIDENCE": 0.0232
+        }
+      },
+      {
+        "sample_id": "ADV1-063-97351cb6",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.9363,
+        "scores": {
+          "SUPPORTED": 0.9363,
+          "CONTRADICTED": 0.0415,
+          "INSUFFICIENT_EVIDENCE": 0.0222
+        }
+      },
+      {
+        "sample_id": "ADV1-064-cdc74c41",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.7973,
+        "scores": {
+          "SUPPORTED": 0.1471,
+          "CONTRADICTED": 0.7973,
+          "INSUFFICIENT_EVIDENCE": 0.0556
+        }
+      },
+      {
+        "sample_id": "ADV1-065-2b89a2db",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.92,
+        "scores": {
+          "SUPPORTED": 0.0284,
+          "CONTRADICTED": 0.0516,
+          "INSUFFICIENT_EVIDENCE": 0.92
+        }
+      },
+      {
+        "sample_id": "ADV1-066-94ebd12c",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9215,
+        "scores": {
+          "SUPPORTED": 0.0258,
+          "CONTRADICTED": 0.0527,
+          "INSUFFICIENT_EVIDENCE": 0.9215
+        }
+      },
+      {
+        "sample_id": "ADV1-067-34697096",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "confidence": 0.944,
+        "scores": {
+          "SUPPORTED": 0.0233,
+          "CONTRADICTED": 0.944,
+          "INSUFFICIENT_EVIDENCE": 0.0327
+        }
+      },
+      {
+        "sample_id": "ADV1-068-bd298229",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.7878,
+        "scores": {
+          "SUPPORTED": 0.0366,
+          "CONTRADICTED": 0.1756,
+          "INSUFFICIENT_EVIDENCE": 0.7878
+        }
+      },
+      {
+        "sample_id": "ADV1-069-dc143b5f",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.9193,
+        "scores": {
+          "SUPPORTED": 0.0272,
+          "CONTRADICTED": 0.0535,
+          "INSUFFICIENT_EVIDENCE": 0.9193
+        }
+      },
+      {
+        "sample_id": "ADV1-070-1a0d3750",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "confidence": 0.4959,
+        "scores": {
+          "SUPPORTED": 0.4394,
+          "CONTRADICTED": 0.4959,
+          "INSUFFICIENT_EVIDENCE": 0.0647
+        }
+      },
+      {
+        "sample_id": "ADV1-071-774f2c2d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "confidence": 0.8335,
+        "scores": {
+          "SUPPORTED": 0.8335,
+          "CONTRADICTED": 0.1159,
+          "INSUFFICIENT_EVIDENCE": 0.0506
+        }
+      },
+      {
+        "sample_id": "ADV1-072-9a00ab5d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "confidence": 0.917,
+        "scores": {
+          "SUPPORTED": 0.0265,
+          "CONTRADICTED": 0.0565,
+          "INSUFFICIENT_EVIDENCE": 0.917
+        }
+      }
+    ],
+    "D_rules_only": [
+      {
+        "sample_id": "ADV1-001-0d4639f9",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-002-412c70d8",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-003-3578a929",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-004-a80b4626",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-005-e7c3adc7",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-006-be08947e",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-007-bdfdf15b",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-008-b82bf390",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-009-05d9cb24",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-010-9f04cb07",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-011-42f74e4f",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-012-2cd07646",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-013-54f95f4f",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-014-15a20f79",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-015-5fc939ef",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-016-c54aa440",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-017-77e12186",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-018-bdce2da1",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-019-c33fb2eb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-020-e94ab81a",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-021-8012cd61",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-022-ca84a9bb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-023-0b65aec2",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-024-acf0beff",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-025-7be66e62",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-026-c2b3c401",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-027-5a8046fc",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-028-d8c7abbf",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-029-d0fb303e",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-030-da32d449",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-031-07030ba9",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-032-4d87e3ac",
+        "scenario_family": "missing_fields",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-033-3cc9e832",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-034-3961e703",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-035-f1e3f971",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-036-b8c48760",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-037-793b2a05",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": true
+      },
+      {
+        "sample_id": "ADV1-038-e2cbb11f",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-039-3df369ca",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-040-cc2e1ec4",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-041-641368a1",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-042-03b2f7be",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-043-6319fb95",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-044-a18223d4",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-045-420d1a69",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-046-e870ba40",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-047-9eace0f3",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-048-b2bacd26",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-049-9cdedca8",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-050-f20e8739",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-051-0d3f84d4",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-052-4c6cd154",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-053-b41aec92",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-054-4c8c9961",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-055-a254eb2f",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-056-ba389370",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-057-a21e007b",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-058-110d0234",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-059-3f62a03d",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-060-40b9629c",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-061-3dfedbb2",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-062-1b9af378",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-063-97351cb6",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-064-cdc74c41",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-065-2b89a2db",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-066-94ebd12c",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-067-34697096",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-068-bd298229",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-069-dc143b5f",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-070-1a0d3750",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-071-774f2c2d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-072-9a00ab5d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      }
+    ],
+    "E_hybrid": [
+      {
+        "sample_id": "ADV1-001-0d4639f9",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-002-412c70d8",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-003-3578a929",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-004-a80b4626",
+        "scenario_family": "typos",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-005-e7c3adc7",
+        "scenario_family": "typos",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-006-be08947e",
+        "scenario_family": "typos",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-007-bdfdf15b",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-008-b82bf390",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-009-05d9cb24",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-010-9f04cb07",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-011-42f74e4f",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-012-2cd07646",
+        "scenario_family": "lowercase_informal",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-013-54f95f4f",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-014-15a20f79",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-015-5fc939ef",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-016-c54aa440",
+        "scenario_family": "emotional_noise",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-017-77e12186",
+        "scenario_family": "emotional_noise",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-018-bdce2da1",
+        "scenario_family": "emotional_noise",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-019-c33fb2eb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-020-e94ab81a",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-021-8012cd61",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-022-ca84a9bb",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-023-0b65aec2",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-024-acf0beff",
+        "scenario_family": "long_irrelevant_context",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-025-7be66e62",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-026-c2b3c401",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-027-5a8046fc",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-028-d8c7abbf",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-029-d0fb303e",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-030-da32d449",
+        "scenario_family": "reordered_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-031-07030ba9",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-032-4d87e3ac",
+        "scenario_family": "missing_fields",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-033-3cc9e832",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-034-3961e703",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-035-f1e3f971",
+        "scenario_family": "missing_fields",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-036-b8c48760",
+        "scenario_family": "missing_fields",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-037-793b2a05",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": true
+      },
+      {
+        "sample_id": "ADV1-038-e2cbb11f",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-039-3df369ca",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-040-cc2e1ec4",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-041-641368a1",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-042-03b2f7be",
+        "scenario_family": "conflicting_dates",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-043-6319fb95",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-044-a18223d4",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-045-420d1a69",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-046-e870ba40",
+        "scenario_family": "partial_evidence",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-047-9eace0f3",
+        "scenario_family": "partial_evidence",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-048-b2bacd26",
+        "scenario_family": "partial_evidence",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-049-9cdedca8",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-050-f20e8739",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-051-0d3f84d4",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-052-4c6cd154",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-053-b41aec92",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-054-4c8c9961",
+        "scenario_family": "negation_double_neg",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-055-a254eb2f",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-056-ba389370",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-057-a21e007b",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-058-110d0234",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-059-3f62a03d",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-060-40b9629c",
+        "scenario_family": "compound_hypotheses",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-061-3dfedbb2",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-062-1b9af378",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-063-97351cb6",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-064-cdc74c41",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-065-2b89a2db",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-066-94ebd12c",
+        "scenario_family": "shortcut_trap",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-067-34697096",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-068-bd298229",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "NEEDS_HUMAN_REVIEW",
+        "is_abstained": true,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-069-dc143b5f",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-070-1a0d3750",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "INSUFFICIENT_EVIDENCE",
+        "pred_label": "INSUFFICIENT_EVIDENCE",
+        "operational_decision": "INSUFFICIENT_EVIDENCE",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-071-774f2c2d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "SUPPORTED",
+        "pred_label": "SUPPORTED",
+        "operational_decision": "SUPPORTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      },
+      {
+        "sample_id": "ADV1-072-9a00ab5d",
+        "scenario_family": "misleading_relevant",
+        "gold_label": "CONTRADICTED",
+        "pred_label": "CONTRADICTED",
+        "operational_decision": "CONTRADICTED",
+        "is_abstained": false,
+        "deterministic_rule_triggered": false
+      }
+    ]
+  }
+}

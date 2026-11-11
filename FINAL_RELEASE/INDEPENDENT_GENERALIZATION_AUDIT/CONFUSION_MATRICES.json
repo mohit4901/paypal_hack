@@ -1,0 +1,272 @@
+{
+  "A_candidate": {
+    "description": "Candidate Fine-Tuned DeBERTa-v3",
+    "labels_order": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "confusion_matrix_dict": {
+      "SUPPORTED": {
+        "SUPPORTED": 180,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 20
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 138,
+        "INSUFFICIENT_EVIDENCE": 62
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 3,
+        "CONTRADICTED": 23,
+        "INSUFFICIENT_EVIDENCE": 174
+      }
+    },
+    "confusion_matrix_rows": [
+      [
+        180,
+        0,
+        20
+      ],
+      [
+        0,
+        138,
+        62
+      ],
+      [
+        3,
+        23,
+        174
+      ]
+    ],
+    "false_contradiction_metrics": {
+      "insuf_to_con_count": 23,
+      "insuf_support": 200,
+      "insuf_to_con_rate": 0.115,
+      "sup_to_con_count": 0,
+      "sup_support": 200,
+      "sup_to_con_rate": 0.0,
+      "overall_false_contradiction_count": 23,
+      "non_contradicted_support": 400,
+      "overall_false_contradiction_rate": 0.0575,
+      "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+    }
+  },
+  "B_pretrained": {
+    "description": "Pretrained MoritzLaurer DeBERTa-v3 NLI",
+    "labels_order": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "confusion_matrix_dict": {
+      "SUPPORTED": {
+        "SUPPORTED": 82,
+        "CONTRADICTED": 18,
+        "INSUFFICIENT_EVIDENCE": 100
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 183,
+        "INSUFFICIENT_EVIDENCE": 17
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 69,
+        "INSUFFICIENT_EVIDENCE": 131
+      }
+    },
+    "confusion_matrix_rows": [
+      [
+        82,
+        18,
+        100
+      ],
+      [
+        0,
+        183,
+        17
+      ],
+      [
+        0,
+        69,
+        131
+      ]
+    ],
+    "false_contradiction_metrics": {
+      "insuf_to_con_count": 69,
+      "insuf_support": 200,
+      "insuf_to_con_rate": 0.345,
+      "sup_to_con_count": 18,
+      "sup_support": 200,
+      "sup_to_con_rate": 0.09,
+      "overall_false_contradiction_count": 87,
+      "non_contradicted_support": 400,
+      "overall_false_contradiction_rate": 0.2175,
+      "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+    }
+  },
+  "C_legacy": {
+    "description": "Legacy Checkpoint (ai/artifacts/best_model)",
+    "labels_order": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "confusion_matrix_dict": {
+      "SUPPORTED": {
+        "SUPPORTED": 72,
+        "CONTRADICTED": 116,
+        "INSUFFICIENT_EVIDENCE": 12
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 5,
+        "CONTRADICTED": 80,
+        "INSUFFICIENT_EVIDENCE": 115
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 132,
+        "INSUFFICIENT_EVIDENCE": 68
+      }
+    },
+    "confusion_matrix_rows": [
+      [
+        72,
+        116,
+        12
+      ],
+      [
+        5,
+        80,
+        115
+      ],
+      [
+        0,
+        132,
+        68
+      ]
+    ],
+    "false_contradiction_metrics": {
+      "insuf_to_con_count": 132,
+      "insuf_support": 200,
+      "insuf_to_con_rate": 0.66,
+      "sup_to_con_count": 116,
+      "sup_support": 200,
+      "sup_to_con_rate": 0.58,
+      "overall_false_contradiction_count": 248,
+      "non_contradicted_support": 400,
+      "overall_false_contradiction_rate": 0.62,
+      "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+    }
+  },
+  "D_rules_only": {
+    "description": "Rules-Only Deterministic Engine",
+    "labels_order": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "confusion_matrix_dict": {
+      "SUPPORTED": {
+        "SUPPORTED": 14,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 186
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 200
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 200
+      }
+    },
+    "confusion_matrix_rows": [
+      [
+        14,
+        0,
+        186
+      ],
+      [
+        0,
+        0,
+        200
+      ],
+      [
+        0,
+        0,
+        200
+      ]
+    ],
+    "false_contradiction_metrics": {
+      "insuf_to_con_count": 0,
+      "insuf_support": 200,
+      "insuf_to_con_rate": 0.0,
+      "sup_to_con_count": 0,
+      "sup_support": 200,
+      "sup_to_con_rate": 0.0,
+      "overall_false_contradiction_count": 0,
+      "non_contradicted_support": 400,
+      "overall_false_contradiction_rate": 0.0,
+      "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+    }
+  },
+  "E_hybrid": {
+    "description": "Production Hybrid (Rules-First + Candidate)",
+    "labels_order": [
+      "SUPPORTED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "confusion_matrix_dict": {
+      "SUPPORTED": {
+        "SUPPORTED": 180,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 20
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 138,
+        "INSUFFICIENT_EVIDENCE": 62
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 3,
+        "CONTRADICTED": 23,
+        "INSUFFICIENT_EVIDENCE": 174
+      }
+    },
+    "confusion_matrix_rows": [
+      [
+        180,
+        0,
+        20
+      ],
+      [
+        0,
+        138,
+        62
+      ],
+      [
+        3,
+        23,
+        174
+      ]
+    ],
+    "false_contradiction_metrics": {
+      "insuf_to_con_count": 23,
+      "insuf_support": 200,
+      "insuf_to_con_rate": 0.115,
+      "sup_to_con_count": 0,
+      "sup_support": 200,
+      "sup_to_con_rate": 0.0,
+      "overall_false_contradiction_count": 23,
+      "non_contradicted_support": 400,
+      "overall_false_contradiction_rate": 0.0575,
+      "definition": "overall_false_contradiction_rate = (INSUF->CON + SUP->CON) / (INSUF + SUP)"
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "model_path": "artifacts/best_model",
+  "dataset": "data/processed/evidencebench",
+  "split": "test",
+  "n_examples": 1664,
+  "overall_accuracy": 0.25,
+  "error_category_totals": {
+    "false_support_total": 1,
+    "missed_contradiction_total": 416,
+    "insuf_as_contradiction_total": 831
+  },
+  "error_examples": {
+    "false_support": [
+      {
+        "scenario_family": "delivery_timestamp_missing",
+        "claim": "The file ProTools_Plugin_v2.zip was delivered on October 8.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Delivery record exists but has no timestamp; date claim cannot be verified."
+      }
+    ],
+    "missed_contradiction": [
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file DesignTemplate_v3.exe was successfully delivered for order order_599701.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file ProTools_Plugin_v2.dmg was successfully delivered for order order_779046.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file WebinarRecording_v5.zip was successfully delivered for order order_337391.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file DatasetPro_v4.zip was successfully delivered for order order_593774.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file WebinarRecording_v1.dmg was successfully delivered for order order_695197.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file EbookBundle_v4.exe was successfully delivered for order order_606387.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file CodeSnippetPack_v2.mp4 was successfully delivered for order order_500496.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file PhotoPreset_v5.pdf was successfully delivered for order order_331550.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file WebinarRecording_v1.zip was successfully delivered for order order_852701.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      },
+      {
+        "scenario_family": "conflicting_delivery_events",
+        "claim": "The file DesignTemplate_v1.exe was successfully delivered for order order_353468.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "Conflicting events: one records success, another records failure."
+      }
+    ],
+    "insuf_as_contradiction": [
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Grace Lee is satisfied with the product VideoAsset_v5.exe.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Dave Wilson is satisfied with the product VideoAsset_v3.mp4.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Maya Nguyen is satisfied with the product CodeSnippetPack_v1.exe.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Dave Smith is satisfied with the product SoftwareLicense_v5.exe.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Maya Wilson is satisfied with the product VideoAsset_v5.zip.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Carol Miller is satisfied with the product SoftwareLicense_v3.exe.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Alice Davis is satisfied with the product VideoAsset_v5.pdf.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Jack Moore is satisfied with the product DatasetPro_v1.dmg.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Karen Wilson is satisfied with the product DesignTemplate_v3.mp4.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      },
+      {
+        "scenario_family": "plausible_but_unestablished",
+        "claim": "The buyer Bob Miller is satisfied with the product MusicSample_v3.exe.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Payment record confirms transaction but cannot establish buyer satisfaction."
+      }
+    ],
+    "correct": [
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file DatasetPro_v2.dmg was delivered for order order_448518.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_749540, not order_448518."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file DesignTemplate_v5.exe was delivered for order order_724149.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_871129, not order_724149."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file EbookBundle_v4.mp4 was delivered for order order_731523.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_169688, not order_731523."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file DatasetPro_v2.zip was delivered for order order_536519.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_432392, not order_536519."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file EbookBundle_v4.zip was delivered for order order_668363.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_765299, not order_668363."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file VideoAsset_v1.zip was delivered for order order_540973.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_964549, not order_540973."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file PhotoPreset_v1.dmg was delivered for order order_793775.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_327214, not order_793775."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file SoftwareLicense_v2.mp4 was delivered for order order_738022.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_413927, not order_738022."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file ProTools_Plugin_v5.exe was delivered for order order_232224.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_161678, not order_232224."
+      },
+      {
+        "scenario_family": "evidence_from_unrelated_transaction",
+        "claim": "The file EbookBundle_v1.mp4 was delivered for order order_305990.",
+        "evidence_count": 1,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Delivery record belongs to order order_451030, not order_305990."
+      }
+    ]
+  },
+  "note": "Examples are sampled for analysis. No sensitive customer data is exposed (all data is synthetic)."
+}

@@ -1,0 +1,13 @@
+{
+  "ledger_path": "/Users/mohitmudgil/Desktop/paypal/ai/data/events_hash_chain_v2.jsonl",
+  "total_events": 164,
+  "head_hash": "55ee7ca99ed43a9c5d744baf1c72514a68f89c17c5accbcf382055dd4daececc",
+  "genesis_hash": "c803e5abf4a3d8be6f732d52d7e88d8d80c6fcc4294573429bd8cbfd21822adf",
+  "checkpoint_timestamp": "2026-11-01T10:18:20.446706+00:00",
+  "signing": {
+    "key_id": "v1-sandbox-202610",
+    "algorithm": "HMAC-SHA256"
+  },
+  "checkpoint_digest": "5f47311458acdf3ab1c6546f23fbad7c06385edbd9d160a51d7ba2183f143512",
+  "hmac_signature": "c6a0e59323c22d23482ea04d5f34827e51176fb72b07e794006f928c245f2bd1"
+}

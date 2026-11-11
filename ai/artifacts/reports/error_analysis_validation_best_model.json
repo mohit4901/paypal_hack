@@ -1,0 +1,303 @@
+{
+  "model_path": "artifacts/best_model",
+  "dataset": "data/processed/evidencebench",
+  "split": "validation",
+  "n_examples": 1664,
+  "overall_accuracy": 0.9393,
+  "error_category_totals": {
+    "false_support_total": 25,
+    "missed_contradiction_total": 5,
+    "insuf_as_contradiction_total": 76
+  },
+  "error_examples": {
+    "false_support": [
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_470097 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_187526 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_928835 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_906502 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_115240 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_935563 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_322897 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_254316 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_278895 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_565175 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      }
+    ],
+    "missed_contradiction": [
+      {
+        "scenario_family": "multiple_conflicting_records",
+        "claim": "The file SoftwareLicense_v1.pdf was delivered to the paying buyer Bob Wilson for order order_692883.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Payment is from Bob Wilson but delivery is to Nora Wilson."
+      },
+      {
+        "scenario_family": "multiple_conflicting_records",
+        "claim": "The file SoftwareLicense_v3.dmg was delivered to the paying buyer Bob Moore for order order_682426.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Payment is from Bob Moore but delivery is to Eve Moore."
+      },
+      {
+        "scenario_family": "multiple_conflicting_records",
+        "claim": "The file DatasetPro_v4.exe was delivered to the paying buyer Owen Wilson for order order_172433.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Payment is from Owen Wilson but delivery is to Grace Wilson."
+      },
+      {
+        "scenario_family": "multiple_conflicting_records",
+        "claim": "The file VideoAsset_v3.zip was delivered to the paying buyer Maya Moore for order order_661449.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Payment is from Maya Moore but delivery is to Maya Miller."
+      },
+      {
+        "scenario_family": "multiple_conflicting_records",
+        "claim": "The file VideoAsset_v3.exe was delivered to the paying buyer Jack Jones for order order_175237.",
+        "evidence_count": 2,
+        "true_label": "CONTRADICTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Payment is from Jack Jones but delivery is to Liam Jones."
+      }
+    ],
+    "insuf_as_contradiction": [
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_582474 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_195467 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs VOIDED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_312546 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_416652 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs VOIDED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_379908 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs VOIDED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_932034 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_674707 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_591971 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_825007 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      },
+      {
+        "scenario_family": "conflicting_status_snapshots",
+        "claim": "Payment for order order_640056 was completed.",
+        "evidence_count": 2,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "CONTRADICTED",
+        "label_rationale": "Conflicting status snapshots (COMPLETED vs DECLINED); final state cannot be determined from available records."
+      }
+    ],
+    "correct": [
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file VideoAsset_v2.exe.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file SoftwareLicense_v3.exe.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file CodeSnippetPack_v1.mp4.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file DatasetPro_v1.zip.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file DatasetPro_v3.exe.",
+        "evidence_count": 0,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "No delivery or download records available."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file SoftwareLicense_v2.dmg.",
+        "evidence_count": 0,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "No delivery or download records available."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file MusicSample_v2.dmg.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file MusicSample_v1.pdf.",
+        "evidence_count": 1,
+        "true_label": "SUPPORTED",
+        "predicted_label": "SUPPORTED",
+        "label_rationale": "Download completion event recorded for the buyer."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file VideoAsset_v2.zip.",
+        "evidence_count": 1,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "A delivery link was sent, but no download event is recorded."
+      },
+      {
+        "scenario_family": "file_sent_vs_downloaded",
+        "claim": "The buyer downloaded the digital file WebinarRecording_v3.dmg.",
+        "evidence_count": 0,
+        "true_label": "INSUFFICIENT_EVIDENCE",
+        "predicted_label": "INSUFFICIENT_EVIDENCE",
+        "label_rationale": "No delivery or download records available."
+      }
+    ]
+  },
+  "note": "Examples are sampled for analysis. No sensitive customer data is exposed (all data is synthetic)."
+}

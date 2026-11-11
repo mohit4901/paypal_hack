@@ -1,0 +1,63 @@
+{
+  "evaluated_at": "2026-10-30T17:25:10.252538+00:00",
+  "model_path": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "dataset": "data/processed/evidencebench_v1_1",
+  "split": "test",
+  "n_examples": 1664,
+  "accuracy": 0.8077,
+  "macro_f1": 0.7836,
+  "macro_f1_95ci": [
+    0.7637,
+    0.8022
+  ],
+  "weighted_f1": 0.8017,
+  "contradiction_recall": 1.0,
+  "insufficient_evidence_recall": 0.564,
+  "false_positive_rate_supported": 0.0984,
+  "false_discovery_rate_supported": 0.1481,
+  "represented_classes_macro_f1": 0.7836,
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 0.8519,
+      "recall": 0.8023,
+      "f1": 0.8263,
+      "support": 688
+    },
+    "CONTRADICTED": {
+      "precision": 0.8616,
+      "recall": 1.0,
+      "f1": 0.9256,
+      "support": 554
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "precision": 0.6381,
+      "recall": 0.564,
+      "f1": 0.5987,
+      "support": 422
+    }
+  },
+  "confusion_matrix": [
+    [
+      552,
+      1,
+      135
+    ],
+    [
+      0,
+      554,
+      0
+    ],
+    [
+      96,
+      88,
+      238
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "SUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "avg_inference_latency_ms_per_example": 1.76,
+  "device": "mps"
+}

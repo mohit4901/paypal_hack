@@ -1,0 +1,66 @@
+{
+  "model_path": "artifacts/best_model",
+  "data_path": "data/processed/evidencebench/validation.jsonl",
+  "n_examples": 1664,
+  "raw_id2label": {
+    "0": "SUPPORTED",
+    "1": "CONTRADICTED",
+    "2": "INSUFFICIENT_EVIDENCE"
+  },
+  "out_idx_to_app_idx": {
+    "0": 0,
+    "1": 1,
+    "2": 2
+  },
+  "accuracy": 0.9308894230769231,
+  "macro_f1": 0.9339283361996351,
+  "represented_classes_macro_f1": 0.9339283361996351,
+  "weighted_f1": 0.9297919037224844,
+  "contradiction_recall": 0.9968102073365231,
+  "insufficient_evidence_recall": 0.8352769679300291,
+  "supported_recall": 1.0,
+  "supported_fpr": 0.025894897182025894,
+  "supported_fdr": 0.08831168831168831,
+  "confusion_matrix": [
+    [
+      351,
+      0,
+      0
+    ],
+    [
+      2,
+      625,
+      0
+    ],
+    [
+      32,
+      81,
+      573
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "SUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 0.9116883116883117,
+      "recall": 1.0,
+      "f1": 0.9538043478260869,
+      "support": 351
+    },
+    "CONTRADICTED": {
+      "precision": 0.8852691218130312,
+      "recall": 0.9968102073365231,
+      "f1": 0.9377344336084021,
+      "support": 627
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "precision": 1.0,
+      "recall": 0.8352769679300291,
+      "f1": 0.9102462271644162,
+      "support": 686
+    }
+  }
+}

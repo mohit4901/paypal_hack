@@ -1,0 +1,11 @@
+{
+  "registry_type": "PROOFLEDGER_LOCAL_MONOTONIC_REGISTRY",
+  "storage_model": "LOCAL_MONOTONIC_REGISTRY_SIMULATION",
+  "highest_trusted_height": 164,
+  "highest_trusted_head_hash": "55ee7ca99ed43a9c5d744baf1c72514a68f89c17c5accbcf382055dd4daececc",
+  "anchored_at": "2026-11-01T12:00:00Z",
+  "authority_key_identity": "proofledger-authority-v3-isolated",
+  "public_key_hex": "9599d3b3ed9fe4643de0482c1c4e51c6be72f926d7021b93c6a657ec384324dd",
+  "monotonic_invariant": "HEIGHT_NON_DECREASING",
+  "fail_closed_policy": "MANDATORY_REGISTRY_REQUIRED"
+}

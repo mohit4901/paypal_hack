@@ -1,0 +1,580 @@
+{
+  "audit_type": "ROUND_5_RECONCILED_AI_CALIBRATION_AND_EVALUATION",
+  "evaluated_at_utc": "2026-11-04T08:01:50Z",
+  "hardware": "Apple Silicon (MPS / PyTorch 2.8.0)",
+  "temperature_scaling": {
+    "fitted_temperature_T": 5.0,
+    "fit_partition": "Validation Set (50 claims)",
+    "method": "Grid Search NLL Minimization"
+  },
+  "brier_baseline": {
+    "uniform_3_class_summed": 0.6667,
+    "uniform_3_class_mean": 0.2222
+  },
+  "previous_50_claim_holdout": {
+    "title": "Previous 50-Claim Holdout Evaluation (Reconciled)",
+    "total_cases": 50,
+    "pre_temperature_brier": 1.0321,
+    "post_temperature_brier": 0.6641,
+    "uniform_baseline_brier": 0.6667,
+    "pre_temperature_ece": 0.5154,
+    "post_temperature_ece": 0.226,
+    "ece_bins": [
+      {
+        "bin": "[0.0, 0.1]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.1, 0.2]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.2, 0.3]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.3, 0.4]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.4, 0.5]",
+        "count": 1,
+        "confidence": 0.4964,
+        "accuracy": 0.0,
+        "diff": 0.4964
+      },
+      {
+        "bin": "[0.5, 0.6]",
+        "count": 4,
+        "confidence": 0.5368,
+        "accuracy": 0.75,
+        "diff": 0.2132
+      },
+      {
+        "bin": "[0.6, 0.7]",
+        "count": 6,
+        "confidence": 0.647,
+        "accuracy": 0.5,
+        "diff": 0.147
+      },
+      {
+        "bin": "[0.7, 0.8]",
+        "count": 5,
+        "confidence": 0.7759,
+        "accuracy": 0.4,
+        "diff": 0.3759
+      },
+      {
+        "bin": "[0.8, 0.9]",
+        "count": 13,
+        "confidence": 0.8568,
+        "accuracy": 0.1538,
+        "diff": 0.703
+      },
+      {
+        "bin": "[0.9, 1.0]",
+        "count": 21,
+        "confidence": 0.9295,
+        "accuracy": 0.3333,
+        "diff": 0.5962
+      }
+    ],
+    "post_ece_bins": [
+      {
+        "bin": "[0.0, 0.1]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.1, 0.2]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.2, 0.3]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.3, 0.4]",
+        "count": 7,
+        "confidence": 0.3875,
+        "accuracy": 0.7143,
+        "diff": 0.3268
+      },
+      {
+        "bin": "[0.4, 0.5]",
+        "count": 40,
+        "confidence": 0.464,
+        "accuracy": 0.25,
+        "diff": 0.214
+      },
+      {
+        "bin": "[0.5, 0.6]",
+        "count": 3,
+        "confidence": 0.5158,
+        "accuracy": 0.6667,
+        "diff": 0.1509
+      },
+      {
+        "bin": "[0.6, 0.7]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.7, 0.8]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.8, 0.9]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.9, 1.0]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      }
+    ],
+    "coverage": 92.0,
+    "abstention_rate": 8.0,
+    "abstained_count": 4,
+    "non_abstained_count": 46,
+    "effective_accuracy": 32.61,
+    "selective_risk": 67.39,
+    "selective_macro_f1": 40.29,
+    "selective_metrics": {
+      "SUPPORTED": {
+        "precision": 83.33,
+        "recall": 71.43,
+        "f1": 76.92,
+        "tp": 5,
+        "fp": 1,
+        "fn": 2
+      },
+      "CONTRADICTED": {
+        "precision": 69.23,
+        "recall": 25.71,
+        "f1": 37.5,
+        "tp": 9,
+        "fp": 4,
+        "fn": 26
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 3.7,
+        "recall": 25.0,
+        "f1": 6.45,
+        "tp": 1,
+        "fp": 26,
+        "fn": 3
+      }
+    },
+    "raw_accuracy": 34.0,
+    "macro_raw_f1": 41.24,
+    "raw_metrics": {
+      "SUPPORTED": {
+        "precision": 83.33,
+        "recall": 71.43,
+        "f1": 76.92,
+        "support": 7
+      },
+      "CONTRADICTED": {
+        "precision": 68.75,
+        "recall": 28.95,
+        "f1": 40.74,
+        "support": 38
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 3.57,
+        "recall": 20.0,
+        "f1": 6.06,
+        "support": 5
+      }
+    },
+    "cm_4col": {
+      "SUPPORTED": {
+        "SUPPORTED": 5,
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 1,
+        "NEEDS_HUMAN_REVIEW": 0
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 1,
+        "CONTRADICTED": 9,
+        "INSUFFICIENT_EVIDENCE": 25,
+        "NEEDS_HUMAN_REVIEW": 3
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 3,
+        "INSUFFICIENT_EVIDENCE": 1,
+        "NEEDS_HUMAN_REVIEW": 1
+      }
+    },
+    "cm_raw": {
+      "SUPPORTED": {
+        "SUPPORTED": 5,
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 1
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 1,
+        "CONTRADICTED": 11,
+        "INSUFFICIENT_EVIDENCE": 26
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 4,
+        "INSUFFICIENT_EVIDENCE": 1
+      }
+    },
+    "abstained_records": [
+      {
+        "claim_id": "Customer paid 0.00 USD fr",
+        "target": "CONTRADICTED",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.5111 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5111,
+        "margin": 0.0749
+      },
+      {
+        "claim_id": "Course access was granted",
+        "target": "CONTRADICTED",
+        "raw_pred": "INSUFFICIENT_EVIDENCE",
+        "reason": "Low absolute confidence (0.4964 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.4964,
+        "margin": 0.0357
+      },
+      {
+        "claim_id": "Order was completed 10 ye",
+        "target": "CONTRADICTED",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.5353 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5353,
+        "margin": 0.1349
+      },
+      {
+        "claim_id": "Buyer car was repaired at",
+        "target": "INSUFFICIENT_EVIDENCE",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.5299 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5299,
+        "margin": 0.1745
+      }
+    ]
+  },
+  "new_balanced_60_claim_holdout": {
+    "title": "Genuinely NEW Balanced 60-Claim Holdout Dataset (20/20/20)",
+    "total_cases": 60,
+    "pre_temperature_brier": 0.8533,
+    "post_temperature_brier": 0.6321,
+    "uniform_baseline_brier": 0.6667,
+    "pre_temperature_ece": 0.3659,
+    "post_temperature_ece": 0.0521,
+    "ece_bins": [
+      {
+        "bin": "[0.0, 0.1]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.1, 0.2]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.2, 0.3]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.3, 0.4]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.4, 0.5]",
+        "count": 2,
+        "confidence": 0.4781,
+        "accuracy": 0.5,
+        "diff": 0.0219
+      },
+      {
+        "bin": "[0.5, 0.6]",
+        "count": 7,
+        "confidence": 0.5459,
+        "accuracy": 0.4286,
+        "diff": 0.1174
+      },
+      {
+        "bin": "[0.6, 0.7]",
+        "count": 7,
+        "confidence": 0.6501,
+        "accuracy": 0.5714,
+        "diff": 0.0787
+      },
+      {
+        "bin": "[0.7, 0.8]",
+        "count": 8,
+        "confidence": 0.7415,
+        "accuracy": 0.5,
+        "diff": 0.2415
+      },
+      {
+        "bin": "[0.8, 0.9]",
+        "count": 13,
+        "confidence": 0.8645,
+        "accuracy": 0.3077,
+        "diff": 0.5568
+      },
+      {
+        "bin": "[0.9, 1.0]",
+        "count": 23,
+        "confidence": 0.9292,
+        "accuracy": 0.4348,
+        "diff": 0.4944
+      }
+    ],
+    "post_ece_bins": [
+      {
+        "bin": "[0.0, 0.1]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.1, 0.2]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.2, 0.3]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.3, 0.4]",
+        "count": 9,
+        "confidence": 0.3842,
+        "accuracy": 0.4444,
+        "diff": 0.0603
+      },
+      {
+        "bin": "[0.4, 0.5]",
+        "count": 43,
+        "confidence": 0.4538,
+        "accuracy": 0.4651,
+        "diff": 0.0113
+      },
+      {
+        "bin": "[0.5, 0.6]",
+        "count": 8,
+        "confidence": 0.5122,
+        "accuracy": 0.25,
+        "diff": 0.2622
+      },
+      {
+        "bin": "[0.6, 0.7]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.7, 0.8]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.8, 0.9]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      },
+      {
+        "bin": "[0.9, 1.0]",
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "diff": 0.0
+      }
+    ],
+    "coverage": 91.67,
+    "abstention_rate": 8.33,
+    "abstained_count": 5,
+    "non_abstained_count": 55,
+    "effective_accuracy": 43.64,
+    "selective_risk": 56.36,
+    "selective_macro_f1": 45.5,
+    "selective_metrics": {
+      "SUPPORTED": {
+        "precision": 100.0,
+        "recall": 65.0,
+        "f1": 78.79,
+        "tp": 13,
+        "fp": 0,
+        "fn": 7
+      },
+      "CONTRADICTED": {
+        "precision": 20.0,
+        "recall": 31.25,
+        "f1": 24.39,
+        "tp": 5,
+        "fp": 20,
+        "fn": 11
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 35.29,
+        "recall": 31.58,
+        "f1": 33.33,
+        "tp": 6,
+        "fp": 11,
+        "fn": 13
+      }
+    },
+    "raw_accuracy": 43.33,
+    "macro_raw_f1": 46.24,
+    "raw_metrics": {
+      "SUPPORTED": {
+        "precision": 100.0,
+        "recall": 65.0,
+        "f1": 78.79,
+        "support": 20
+      },
+      "CONTRADICTED": {
+        "precision": 25.0,
+        "recall": 35.0,
+        "f1": 29.17,
+        "support": 20
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "precision": 31.58,
+        "recall": 30.0,
+        "f1": 30.77,
+        "support": 20
+      }
+    },
+    "cm_4col": {
+      "SUPPORTED": {
+        "SUPPORTED": 13,
+        "CONTRADICTED": 7,
+        "INSUFFICIENT_EVIDENCE": 0,
+        "NEEDS_HUMAN_REVIEW": 0
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 5,
+        "INSUFFICIENT_EVIDENCE": 11,
+        "NEEDS_HUMAN_REVIEW": 4
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 13,
+        "INSUFFICIENT_EVIDENCE": 6,
+        "NEEDS_HUMAN_REVIEW": 1
+      }
+    },
+    "cm_raw": {
+      "SUPPORTED": {
+        "SUPPORTED": 13,
+        "CONTRADICTED": 7,
+        "INSUFFICIENT_EVIDENCE": 0
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 7,
+        "INSUFFICIENT_EVIDENCE": 13
+      },
+      "INSUFFICIENT_EVIDENCE": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 14,
+        "INSUFFICIENT_EVIDENCE": 6
+      }
+    },
+    "abstained_records": [
+      {
+        "claim_id": "NEW-HLD-CON-06-5d1be7a5e9fb",
+        "target": "CONTRADICTED",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.4904 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.4904,
+        "margin": 0.0553
+      },
+      {
+        "claim_id": "NEW-HLD-CON-11-0f0068308f9a",
+        "target": "CONTRADICTED",
+        "raw_pred": "INSUFFICIENT_EVIDENCE",
+        "reason": "Low absolute confidence (0.5265 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5265,
+        "margin": 0.1064
+      },
+      {
+        "claim_id": "NEW-HLD-CON-14-4fa7e450a535",
+        "target": "CONTRADICTED",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.5341 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5341,
+        "margin": 0.1339
+      },
+      {
+        "claim_id": "NEW-HLD-CON-16-e73a66f932b2",
+        "target": "CONTRADICTED",
+        "raw_pred": "INSUFFICIENT_EVIDENCE",
+        "reason": "Low absolute confidence (0.5036 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.5036,
+        "margin": 0.0636
+      },
+      {
+        "claim_id": "NEW-HLD-INS-07-c334cd3a5c1a",
+        "target": "INSUFFICIENT_EVIDENCE",
+        "raw_pred": "CONTRADICTED",
+        "reason": "Low absolute confidence (0.4658 < 0.55); semantic ambiguity detected.",
+        "confidence": 0.4658,
+        "margin": 0.0037
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "selected_checkpoint": "artifacts/checkpoints/best_run/best",
+  "val_macro_f1": 0.9339283361996351,
+  "experiment": "artifacts/checkpoints/best_run",
+  "selection_criterion": "validation macro-F1 (highest)",
+  "note": "Test set evaluation must be run AFTER checkpoint selection is frozen. Do not re-select based on test set results."
+}

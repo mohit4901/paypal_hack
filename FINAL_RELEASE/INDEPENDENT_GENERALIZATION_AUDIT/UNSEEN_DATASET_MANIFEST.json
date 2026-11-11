@@ -1,0 +1,32 @@
+{
+  "dataset_name": "proofledger_unseen_v1",
+  "version": "1.0.0",
+  "created_at": "2026-11-10T19:21:07.407346+00:00",
+  "total_examples": 600,
+  "class_counts": {
+    "INSUFFICIENT_EVIDENCE": 200,
+    "SUPPORTED": 200,
+    "CONTRADICTED": 200
+  },
+  "scenario_families": {
+    "multi_box_partial_fulfillment": 45,
+    "customs_transit_vs_final_delivery": 45,
+    "refund_lifecycle_stages": 42,
+    "duplicate_billing_and_fx": 42,
+    "checkout_auth_vs_settlement": 42,
+    "archive_gaps_and_untracked_mail": 42,
+    "direct_merchant_claim_refutation": 42,
+    "digital_utilization_vs_provisioning": 42,
+    "carrier_manifest_vs_label_prep": 45,
+    "plausible_but_non_probative_docs": 42,
+    "subjective_complaint_vs_objective_delivery": 42,
+    "destination_address_divergence": 45,
+    "sku_variant_mismatch": 42,
+    "chronological_event_paradox": 42
+  },
+  "designation": "SYNTHETIC_INDEPENDENT (No real-world merchant dispute PII available)",
+  "adjudication_status": "VALIDATED_GOLD_LABEL",
+  "adversarial_challenge_count": 72,
+  "dataset_jsonl_sha256": "e747bcf5cea3e70f8e438f9f69cd94de09552fced964c155fd08db8169bcb799",
+  "adversarial_jsonl_sha256": "f790c870f36b25770f455daa410b55427dd29b42808e59d8a499a58f26f8c0e8"
+}

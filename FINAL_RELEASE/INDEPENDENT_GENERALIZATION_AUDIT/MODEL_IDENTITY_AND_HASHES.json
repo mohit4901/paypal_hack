@@ -1,0 +1,224 @@
+{
+  "audit_timestamp": "2026-11-10T19:18:46.641199+00:00",
+  "candidate_artifact": {
+    "path": "ai/artifacts/candidates/deberta_v3_inr_v1/best",
+    "expected_model_safetensors_sha256": "2afd4cf10a28b274445073c6fc3c880c54708d5886ca3a2c54ed45857a94e2ea",
+    "actual_model_safetensors_sha256": "2afd4cf10a28b274445073c6fc3c880c54708d5886ca3a2c54ed45857a94e2ea",
+    "matches_recorded_fingerprint": true,
+    "files": {
+      "config.json": {
+        "size_bytes": 1113,
+        "sha256": "af0fdd4ab7e322bd74da1726dafc4c3319a23d14b063058a3145a5b0dcf1c836"
+      },
+      "model.safetensors": {
+        "size_bytes": 737722356,
+        "sha256": "2afd4cf10a28b274445073c6fc3c880c54708d5886ca3a2c54ed45857a94e2ea",
+        "safetensors": {
+          "valid_structure": true,
+          "file_size_bytes": 737722356,
+          "header_bytes": 24544,
+          "tensor_count": 202,
+          "dtypes": [
+            "F32"
+          ],
+          "metadata": {
+            "format": "pt"
+          },
+          "classifier_weight_shape": [
+            3,
+            768
+          ],
+          "classifier_bias_shape": [
+            3
+          ]
+        }
+      },
+      "special_tokens_map.json": {
+        "size_bytes": 970,
+        "sha256": "b2f1b2f15f29a6b6d9d6ea4eca1675d2c231a71477f151d48f79cc83a625ba21"
+      },
+      "tokenizer.json": {
+        "size_bytes": 8649117,
+        "sha256": "38b659758bd3a259baf2613299e09ba570f695b60c8275abd336a5bb6ead3e25"
+      },
+      "tokenizer_config.json": {
+        "size_bytes": 1314,
+        "sha256": "fe9a0072cdff367b5ead84896493bf17b3dc67ab74d1256936155599b6cdd459"
+      }
+    },
+    "loaded_verifier_info": {
+      "model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+      "architecture": "deberta-v2",
+      "num_labels": 3,
+      "id2label": {
+        "0": "SUPPORTED",
+        "1": "CONTRADICTED",
+        "2": "INSUFFICIENT_EVIDENCE"
+      },
+      "nli_to_app": {
+        "SUPPORTED": "SUPPORTED",
+        "CONTRADICTED": "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE": "INSUFFICIENT_EVIDENCE"
+      },
+      "device": "mps",
+      "load_time_s": 0.59
+    },
+    "tokenizer_class": "DebertaV2TokenizerFast",
+    "vocab_size": 128000,
+    "max_length": 512,
+    "input_order": "premise=formatted_evidence, hypothesis=claim",
+    "sample_nli_input": {
+      "premise": "[CARRIER|EV-1] 2026-11-10T00:00:00Z: UPS delivered to porch.",
+      "hypothesis": "Package arrived at recipient porch."
+    },
+    "sample_probe_output": {
+      "label": "SUPPORTED",
+      "decision": "SUPPORTED",
+      "is_abstained": false,
+      "abstention_reason": null,
+      "margin": 0.9978,
+      "confidence": 0.9988,
+      "logits": [
+        5.2172,
+        -3.2569,
+        -1.7012
+      ],
+      "note_confidence": "Raw model score \u2014 not a calibrated probability. Does not indicate PayPal dispute outcome.",
+      "scores": {
+        "SUPPORTED": 0.9988,
+        "CONTRADICTED": 0.0002,
+        "INSUFFICIENT_EVIDENCE": 0.001
+      },
+      "nli_scores": {
+        "SUPPORTED": 0.9988,
+        "CONTRADICTED": 0.0002,
+        "INSUFFICIENT_EVIDENCE": 0.001
+      },
+      "evidence_ids": [
+        "EV-1"
+      ],
+      "truncated": false,
+      "truncation_warning": null,
+      "model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best"
+    }
+  },
+  "legacy_artifact": {
+    "path": "ai/artifacts/best_model",
+    "expected_model_safetensors_sha256": "0e4d8903a24b7c8d45c63023a9d71425153f8919e6acbfa331337aaf088f4617",
+    "actual_model_safetensors_sha256": "0e4d8903a24b7c8d45c63023a9d71425153f8919e6acbfa331337aaf088f4617",
+    "matches_recorded_fingerprint": true,
+    "files": {
+      "config.json": {
+        "size_bytes": 1092,
+        "sha256": "3225bdc1cd7b0e6f483e96b810cd67f24a6bba6ba374289101b800ec299e63b7"
+      },
+      "model.safetensors": {
+        "size_bytes": 368873446,
+        "sha256": "0e4d8903a24b7c8d45c63023a9d71425153f8919e6acbfa331337aaf088f4617",
+        "safetensors": {
+          "valid_structure": true,
+          "file_size_bytes": 368873446,
+          "header_bytes": 24536,
+          "tensor_count": 202,
+          "dtypes": [
+            "F16"
+          ],
+          "metadata": {
+            "format": "pt"
+          },
+          "classifier_weight_shape": [
+            3,
+            768
+          ],
+          "classifier_bias_shape": [
+            3
+          ]
+        }
+      },
+      "selection_record.json": {
+        "size_bytes": 339,
+        "sha256": "0e21f4ea1daf8db6c8528a68b983d0d52abb38f6ae1694bb84f5275313f603b6"
+      },
+      "special_tokens_map.json": {
+        "size_bytes": 970,
+        "sha256": "b2f1b2f15f29a6b6d9d6ea4eca1675d2c231a71477f151d48f79cc83a625ba21"
+      },
+      "tokenizer.json": {
+        "size_bytes": 8649129,
+        "sha256": "3ce4ce37b95420bf20651bac414b1643c25a3047b31dc4626646e149dcd3199e"
+      },
+      "tokenizer_config.json": {
+        "size_bytes": 1505,
+        "sha256": "97fcd6c94e8aa9fe4a48e50275a1dbb1511fc8aca337fb426c1d092336e02811"
+      }
+    }
+  },
+  "pretrained_baseline": {
+    "model_id": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "snapshot_path": "/Users/mohitmudgil/.cache/huggingface/hub/models--MoritzLaurer--DeBERTa-v3-base-mnli-fever-anli/snapshots/6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+    "id2label": {
+      "0": "entailment",
+      "1": "neutral",
+      "2": "contradiction"
+    },
+    "architecture": "deberta-v2",
+    "files": {
+      "added_tokens.json": {
+        "size_bytes": 23,
+        "sha256": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f"
+      },
+      "config.json": {
+        "size_bytes": 1090,
+        "sha256": "a6c616d6dabeacf90fd0e776c741d3f0f30a05533ccf0bd3b5b62e94cfaa8d57"
+      },
+      "model.safetensors": {
+        "size_bytes": 368877646,
+        "sha256": "06d6fd89edd4f97816831626daafbdb0b029cf63bae8edc0bccab1d64e2e7707",
+        "safetensors": {
+          "valid_structure": true,
+          "file_size_bytes": 368877646,
+          "header_bytes": 24640,
+          "tensor_count": 203,
+          "dtypes": [
+            "F16",
+            "I64"
+          ],
+          "metadata": {
+            "format": "pt"
+          },
+          "classifier_weight_shape": [
+            3,
+            768
+          ],
+          "classifier_bias_shape": [
+            3
+          ]
+        }
+      },
+      "special_tokens_map.json": {
+        "size_bytes": 286,
+        "sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9"
+      },
+      "spm.model": {
+        "size_bytes": 2464616,
+        "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+      },
+      "tokenizer.json": {
+        "size_bytes": 8656646,
+        "sha256": "05402ffae6dd382a8491b1d29bfc139bec5d332662e86a026f433ce54c25c202"
+      },
+      "tokenizer_config.json": {
+        "size_bytes": 1284,
+        "sha256": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a"
+      }
+    }
+  },
+  "production_loader_verification": {
+    "default_loaded_model_path": "/Users/mohitmudgil/Desktop/paypal/ai/artifacts/candidates/deberta_v3_inr_v1/best",
+    "default_matches_candidate": true,
+    "default_load_error": null,
+    "missing_override_verifier_is_none": true,
+    "missing_override_loaded_model_path": null,
+    "missing_override_error": "Checkpoint not found at /tmp/nonexistent_proofledger_ckpt_audit"
+  }
+}
