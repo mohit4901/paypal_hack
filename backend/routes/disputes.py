@@ -615,8 +615,8 @@ def _resolve_dispute_and_transaction(
             }
             return dispute_dict, transaction_dict
 
-    # Fallback: check live PayPal dispute API if ID resembles PP-D-
-    if dispute_id.startswith("PP-D-"):
+    # Fallback: check live PayPal dispute API if ID resembles PP- (e.g., PP-D-* or PP-R-*)
+    if dispute_id.startswith("PP-"):
         try:
             live_detail = paypal_dispute_client.get_dispute(dispute_id)
             if live_detail.get("success"):
